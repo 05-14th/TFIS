@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TFIS", "E:\TFIS\TFIS.vbproj", "{215B3A68-E006-4E5A-ADB3-C84FE8810619}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{215B3A68-E006-4E5A-ADB3-C84FE8810619}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{215B3A68-E006-4E5A-ADB3-C84FE8810619}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{215B3A68-E006-4E5A-ADB3-C84FE8810619}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{215B3A68-E006-4E5A-ADB3-C84FE8810619}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5FB4D3C7-E01A-4582-89F3-41E29EF15C91}
+	EndGlobalSection
+EndGlobal
