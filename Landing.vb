@@ -67,9 +67,16 @@ Public Class Landing
 
     Private Sub HopeButton2_Click(sender As Object, e As EventArgs) Handles HopeButton2.Click
         mainPnl.Controls.Clear()
-        ShowOnly(profilePnl, dashPnl, profilePnl)
         DockControl(profilePnl, mainPnl, DockStyle.Fill)
         DockControl(sidePnl, mainPnl, DockStyle.Left)
+        ShowOnly(profilePnl, dashPnl, profilePnl, calendarPnl)
+    End Sub
+
+    Private Sub HopeButton4_Click(sender As Object, e As EventArgs) Handles HopeButton4.Click
+        mainPnl.Controls.Clear()
+        CenterControl(calendarPnl, mainPnl)
+        DockControl(sidePnl, mainPnl, DockStyle.Left)
+        ShowOnly(calendarPnl, dashPnl, profilePnl, calendarPnl)
     End Sub
 End Class
 

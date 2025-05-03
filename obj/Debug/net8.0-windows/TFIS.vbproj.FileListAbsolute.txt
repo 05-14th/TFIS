@@ -18,3 +18,4 @@ E:\TFIS\obj\Debug\net8.0-windows\TFIS.genruntimeconfig.cache
 E:\TFIS\obj\Debug\net8.0-windows\ref\TFIS.dll
 E:\TFIS\obj\Debug\net8.0-windows\TFIS.Resources.resources
 E:\TFIS\obj\Debug\net8.0-windows\TFIS.Landing.resources
+E:\TFIS\obj\Debug\net8.0-windows\TFIS.sourcelink.json

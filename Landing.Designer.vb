@@ -40,6 +40,11 @@ Partial Class Landing
         passTxtBox = New ReaLTaiizor.Controls.HopeTextBox()
         unameTxtBox = New ReaLTaiizor.Controls.HopeTextBox()
         mainPnl = New ReaLTaiizor.Controls.MetroPanel()
+        calendarPnl = New Panel()
+        BigLabel17 = New ReaLTaiizor.Controls.BigLabel()
+        BigLabel18 = New ReaLTaiizor.Controls.BigLabel()
+        CrownButton1 = New ReaLTaiizor.Controls.CrownButton()
+        MonthCalendar1 = New MonthCalendar()
         profilePnl = New Panel()
         TextBox4 = New TextBox()
         TextBox3 = New TextBox()
@@ -85,6 +90,7 @@ Partial Class Landing
         startPnl.SuspendLayout()
         signInPnl.SuspendLayout()
         mainPnl.SuspendLayout()
+        calendarPnl.SuspendLayout()
         profilePnl.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         dashPnl.SuspendLayout()
@@ -220,9 +226,9 @@ Partial Class Landing
         signInPnl.Controls.Add(passTxtBox)
         signInPnl.Controls.Add(unameTxtBox)
         signInPnl.IsDerivedStyle = True
-        signInPnl.Location = New Point(12, 183)
+        signInPnl.Location = New Point(21, 441)
         signInPnl.Name = "signInPnl"
-        signInPnl.Size = New Size(60, 332)
+        signInPnl.Size = New Size(528, 332)
         signInPnl.Style = ReaLTaiizor.Enum.Metro.Style.Light
         signInPnl.StyleManager = Nothing
         signInPnl.TabIndex = 6
@@ -344,6 +350,7 @@ Partial Class Landing
         mainPnl.BackgroundColor = Color.White
         mainPnl.BorderColor = Color.FromArgb(CByte(150), CByte(150), CByte(150))
         mainPnl.BorderThickness = 1
+        mainPnl.Controls.Add(calendarPnl)
         mainPnl.Controls.Add(profilePnl)
         mainPnl.Controls.Add(dashPnl)
         mainPnl.Controls.Add(sidePnl)
@@ -360,6 +367,62 @@ Partial Class Landing
         mainPnl.TabIndex = 11
         mainPnl.ThemeAuthor = "Taiizor"
         mainPnl.ThemeName = "MetroLight"
+        ' 
+        ' calendarPnl
+        ' 
+        calendarPnl.Controls.Add(BigLabel17)
+        calendarPnl.Controls.Add(BigLabel18)
+        calendarPnl.Controls.Add(CrownButton1)
+        calendarPnl.Controls.Add(MonthCalendar1)
+        calendarPnl.Location = New Point(598, 39)
+        calendarPnl.Name = "calendarPnl"
+        calendarPnl.Size = New Size(311, 358)
+        calendarPnl.TabIndex = 0
+        calendarPnl.Visible = False
+        ' 
+        ' BigLabel17
+        ' 
+        BigLabel17.AutoSize = True
+        BigLabel17.BackColor = Color.Transparent
+        BigLabel17.Dock = DockStyle.Bottom
+        BigLabel17.Font = New Font("Segoe UI", 10F)
+        BigLabel17.ForeColor = Color.FromArgb(CByte(80), CByte(80), CByte(80))
+        BigLabel17.Location = New Point(0, 265)
+        BigLabel17.Name = "BigLabel17"
+        BigLabel17.Size = New Size(306, 28)
+        BigLabel17.TabIndex = 6
+        BigLabel17.Text = "RECOMMENDED RENEWAL DATE:"
+        ' 
+        ' BigLabel18
+        ' 
+        BigLabel18.AutoSize = True
+        BigLabel18.BackColor = Color.Transparent
+        BigLabel18.Dock = DockStyle.Bottom
+        BigLabel18.Font = New Font("Segoe UI", 10F)
+        BigLabel18.ForeColor = Color.FromArgb(CByte(80), CByte(80), CByte(80))
+        BigLabel18.Location = New Point(0, 293)
+        BigLabel18.Name = "BigLabel18"
+        BigLabel18.Size = New Size(306, 28)
+        BigLabel18.TabIndex = 5
+        BigLabel18.Text = "RECOMMENDED RENEWAL DATE:"
+        ' 
+        ' CrownButton1
+        ' 
+        CrownButton1.Dock = DockStyle.Bottom
+        CrownButton1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        CrownButton1.Location = New Point(0, 321)
+        CrownButton1.Name = "CrownButton1"
+        CrownButton1.Padding = New Padding(5)
+        CrownButton1.Size = New Size(311, 37)
+        CrownButton1.TabIndex = 4
+        CrownButton1.Text = "CONTINUE"
+        ' 
+        ' MonthCalendar1
+        ' 
+        MonthCalendar1.Dock = DockStyle.Fill
+        MonthCalendar1.Location = New Point(0, 0)
+        MonthCalendar1.Name = "MonthCalendar1"
+        MonthCalendar1.TabIndex = 1
         ' 
         ' profilePnl
         ' 
@@ -469,7 +532,7 @@ Partial Class Landing
         ' 
         dashPnl.Controls.Add(Panel6)
         dashPnl.Controls.Add(TableLayoutPanel1)
-        dashPnl.Location = New Point(323, 39)
+        dashPnl.Location = New Point(922, 39)
         dashPnl.Name = "dashPnl"
         dashPnl.Padding = New Padding(7)
         dashPnl.Size = New Size(180, 562)
@@ -1043,6 +1106,8 @@ Partial Class Landing
         signInPnl.ResumeLayout(False)
         signInPnl.PerformLayout()
         mainPnl.ResumeLayout(False)
+        calendarPnl.ResumeLayout(False)
+        calendarPnl.PerformLayout()
         profilePnl.ResumeLayout(False)
         profilePnl.PerformLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
@@ -1114,5 +1179,10 @@ Partial Class Landing
     Friend WithEvents BigLabel14 As ReaLTaiizor.Controls.BigLabel
     Friend WithEvents BigLabel8 As ReaLTaiizor.Controls.BigLabel
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents calendarPnl As Panel
+    Friend WithEvents MonthCalendar1 As MonthCalendar
+    Friend WithEvents BigLabel17 As ReaLTaiizor.Controls.BigLabel
+    Friend WithEvents BigLabel18 As ReaLTaiizor.Controls.BigLabel
+    Friend WithEvents CrownButton1 As ReaLTaiizor.Controls.CrownButton
 
 End Class
