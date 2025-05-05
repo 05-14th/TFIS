@@ -22,6 +22,7 @@ Partial Class Landing
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Landing))
         BigLabel1 = New ReaLTaiizor.Controls.BigLabel()
         Panel2 = New Panel()
         Panel1 = New Panel()
@@ -41,10 +42,17 @@ Partial Class Landing
         unameTxtBox = New ReaLTaiizor.Controls.HopeTextBox()
         mainPnl = New ReaLTaiizor.Controls.MetroPanel()
         calendarPnl = New Panel()
-        BigLabel17 = New ReaLTaiizor.Controls.BigLabel()
-        BigLabel18 = New ReaLTaiizor.Controls.BigLabel()
-        CrownButton1 = New ReaLTaiizor.Controls.CrownButton()
-        MonthCalendar1 = New MonthCalendar()
+        aboutPnl = New Panel()
+        TableLayoutPanel2 = New TableLayoutPanel()
+        misPnl = New Panel()
+        mission_lbl = New ReaLTaiizor.Controls.BigLabel()
+        mission = New ReaLTaiizor.Controls.BigLabel()
+        visPnl = New Panel()
+        vision_lbl = New ReaLTaiizor.Controls.BigLabel()
+        vision = New ReaLTaiizor.Controls.BigLabel()
+        descPnl = New Panel()
+        description = New ReaLTaiizor.Controls.BigLabel()
+        description_lbl = New ReaLTaiizor.Controls.BigLabel()
         profilePnl = New Panel()
         TextBox4 = New TextBox()
         TextBox3 = New TextBox()
@@ -86,11 +94,17 @@ Partial Class Landing
         HopeTextBox3 = New ReaLTaiizor.Controls.HopeTextBox()
         HopeTextBox2 = New ReaLTaiizor.Controls.HopeTextBox()
         BigLabel7 = New ReaLTaiizor.Controls.BigLabel()
+        calendar = New MonthCalendar()
         Panel1.SuspendLayout()
         startPnl.SuspendLayout()
         signInPnl.SuspendLayout()
         mainPnl.SuspendLayout()
         calendarPnl.SuspendLayout()
+        aboutPnl.SuspendLayout()
+        TableLayoutPanel2.SuspendLayout()
+        misPnl.SuspendLayout()
+        visPnl.SuspendLayout()
+        descPnl.SuspendLayout()
         profilePnl.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         dashPnl.SuspendLayout()
@@ -104,7 +118,7 @@ Partial Class Landing
         BigLabel1.AutoSize = True
         BigLabel1.BackColor = Color.Transparent
         BigLabel1.Font = New Font("Segoe UI", 25F)
-        BigLabel1.ForeColor = Color.FromArgb(CByte(80), CByte(80), CByte(80))
+        BigLabel1.ForeColor = Color.FromArgb(80, 80, 80)
         BigLabel1.Location = New Point(923, 18)
         BigLabel1.Name = "BigLabel1"
         BigLabel1.Size = New Size(0, 67)
@@ -121,7 +135,7 @@ Partial Class Landing
         ' 
         ' Panel1
         ' 
-        Panel1.BackColor = Color.FromArgb(CByte(45), CByte(47), CByte(49))
+        Panel1.BackColor = Color.FromArgb(45, 47, 49)
         Panel1.Controls.Add(ForeverClose1)
         Panel1.Dock = DockStyle.Top
         Panel1.Location = New Point(0, 0)
@@ -133,17 +147,17 @@ Partial Class Landing
         ' 
         ForeverClose1.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         ForeverClose1.BackColor = Color.White
-        ForeverClose1.BaseColor = Color.FromArgb(CByte(45), CByte(47), CByte(49))
+        ForeverClose1.BaseColor = Color.FromArgb(45, 47, 49)
         ForeverClose1.DefaultLocation = True
-        ForeverClose1.DownColor = Color.FromArgb(CByte(30), CByte(0), CByte(0), CByte(0))
+        ForeverClose1.DownColor = Color.FromArgb(30, 0, 0, 0)
         ForeverClose1.Font = New Font("Marlett", 10F)
         ForeverClose1.Location = New Point(1783, 16)
         ForeverClose1.Name = "ForeverClose1"
-        ForeverClose1.OverColor = Color.FromArgb(CByte(30), CByte(255), CByte(255), CByte(255))
+        ForeverClose1.OverColor = Color.FromArgb(30, 255, 255, 255)
         ForeverClose1.Size = New Size(18, 18)
         ForeverClose1.TabIndex = 0
         ForeverClose1.Text = "ForeverClose1"
-        ForeverClose1.TextColor = Color.FromArgb(CByte(243), CByte(243), CByte(243))
+        ForeverClose1.TextColor = Color.FromArgb(243, 243, 243)
         ' 
         ' startPnl
         ' 
@@ -164,7 +178,7 @@ Partial Class Landing
         ' 
         ' contBtn
         ' 
-        contBtn.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        contBtn.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0)
         contBtn.Location = New Point(116, 335)
         contBtn.Name = "contBtn"
         contBtn.Padding = New Padding(5)
@@ -178,7 +192,7 @@ Partial Class Landing
         BigLabel3.AutoSize = True
         BigLabel3.BackColor = Color.Transparent
         BigLabel3.Font = New Font("Algerian", 28F)
-        BigLabel3.ForeColor = Color.FromArgb(CByte(80), CByte(80), CByte(80))
+        BigLabel3.ForeColor = Color.FromArgb(80, 80, 80)
         BigLabel3.Location = New Point(40, 115)
         BigLabel3.Name = "BigLabel3"
         BigLabel3.Size = New Size(321, 63)
@@ -191,8 +205,8 @@ Partial Class Landing
         BigLabel2.Anchor = AnchorStyles.Left Or AnchorStyles.Right
         BigLabel2.AutoSize = True
         BigLabel2.BackColor = Color.Transparent
-        BigLabel2.Font = New Font("Algerian", 40F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        BigLabel2.ForeColor = Color.FromArgb(CByte(80), CByte(80), CByte(80))
+        BigLabel2.Font = New Font("Algerian", 40F, FontStyle.Regular, GraphicsUnit.Point, 0)
+        BigLabel2.ForeColor = Color.FromArgb(80, 80, 80)
         BigLabel2.Location = New Point(5, 26)
         BigLabel2.Name = "BigLabel2"
         BigLabel2.Size = New Size(398, 89)
@@ -205,7 +219,7 @@ Partial Class Landing
         BigLabel4.AutoSize = True
         BigLabel4.BackColor = Color.Transparent
         BigLabel4.Font = New Font("Segoe UI", 14F, FontStyle.Bold)
-        BigLabel4.ForeColor = Color.FromArgb(CByte(80), CByte(80), CByte(80))
+        BigLabel4.ForeColor = Color.FromArgb(80, 80, 80)
         BigLabel4.Location = New Point(40, 214)
         BigLabel4.Name = "BigLabel4"
         BigLabel4.Size = New Size(330, 38)
@@ -216,7 +230,7 @@ Partial Class Landing
         ' 
         signInPnl.Anchor = AnchorStyles.Left
         signInPnl.BackgroundColor = Color.White
-        signInPnl.BorderColor = Color.FromArgb(CByte(150), CByte(150), CByte(150))
+        signInPnl.BorderColor = Color.FromArgb(150, 150, 150)
         signInPnl.BorderThickness = 1
         signInPnl.Controls.Add(CheckBox1)
         signInPnl.Controls.Add(signInBtn)
@@ -226,9 +240,9 @@ Partial Class Landing
         signInPnl.Controls.Add(passTxtBox)
         signInPnl.Controls.Add(unameTxtBox)
         signInPnl.IsDerivedStyle = True
-        signInPnl.Location = New Point(21, 441)
+        signInPnl.Location = New Point(684, 3)
         signInPnl.Name = "signInPnl"
-        signInPnl.Size = New Size(528, 332)
+        signInPnl.Size = New Size(68, 332)
         signInPnl.Style = ReaLTaiizor.Enum.Metro.Style.Light
         signInPnl.StyleManager = Nothing
         signInPnl.TabIndex = 6
@@ -249,7 +263,7 @@ Partial Class Landing
         ' 
         ' signInBtn
         ' 
-        signInBtn.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        signInBtn.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0)
         signInBtn.Location = New Point(194, 269)
         signInBtn.Name = "signInBtn"
         signInBtn.Padding = New Padding(5)
@@ -259,7 +273,7 @@ Partial Class Landing
         ' 
         ' signUpLink
         ' 
-        signUpLink.ActiveLinkColor = Color.FromArgb(CByte(221), CByte(72), CByte(20))
+        signUpLink.ActiveLinkColor = Color.FromArgb(221, 72, 20)
         signUpLink.AutoSize = True
         signUpLink.BackColor = Color.Transparent
         signUpLink.Font = New Font("Segoe UI", 11F)
@@ -271,7 +285,7 @@ Partial Class Landing
         signUpLink.TabIndex = 6
         signUpLink.TabStop = True
         signUpLink.Text = "I don't have an account"
-        signUpLink.VisitedLinkColor = Color.FromArgb(CByte(240), CByte(119), CByte(70))
+        signUpLink.VisitedLinkColor = Color.FromArgb(240, 119, 70)
         ' 
         ' BigLabel6
         ' 
@@ -279,7 +293,7 @@ Partial Class Landing
         BigLabel6.AutoSize = True
         BigLabel6.BackColor = Color.Transparent
         BigLabel6.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        BigLabel6.ForeColor = Color.FromArgb(CByte(80), CByte(80), CByte(80))
+        BigLabel6.ForeColor = Color.FromArgb(80, 80, 80)
         BigLabel6.Location = New Point(30, 132)
         BigLabel6.Name = "BigLabel6"
         BigLabel6.Size = New Size(147, 32)
@@ -292,7 +306,7 @@ Partial Class Landing
         BigLabel5.AutoSize = True
         BigLabel5.BackColor = Color.Transparent
         BigLabel5.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        BigLabel5.ForeColor = Color.FromArgb(CByte(80), CByte(80), CByte(80))
+        BigLabel5.ForeColor = Color.FromArgb(80, 80, 80)
         BigLabel5.Location = New Point(30, 23)
         BigLabel5.Name = "BigLabel5"
         BigLabel5.Size = New Size(145, 32)
@@ -302,11 +316,11 @@ Partial Class Landing
         ' passTxtBox
         ' 
         passTxtBox.BackColor = Color.White
-        passTxtBox.BaseColor = Color.FromArgb(CByte(44), CByte(55), CByte(66))
-        passTxtBox.BorderColorA = Color.FromArgb(CByte(64), CByte(158), CByte(255))
-        passTxtBox.BorderColorB = Color.FromArgb(CByte(220), CByte(223), CByte(230))
+        passTxtBox.BaseColor = Color.FromArgb(44, 55, 66)
+        passTxtBox.BorderColorA = Color.FromArgb(64, 158, 255)
+        passTxtBox.BorderColorB = Color.FromArgb(220, 223, 230)
         passTxtBox.Font = New Font("Segoe UI", 12F)
-        passTxtBox.ForeColor = Color.FromArgb(CByte(48), CByte(49), CByte(51))
+        passTxtBox.ForeColor = Color.FromArgb(48, 49, 51)
         passTxtBox.Hint = ""
         passTxtBox.Location = New Point(30, 174)
         passTxtBox.MaxLength = 32767
@@ -325,11 +339,11 @@ Partial Class Landing
         ' unameTxtBox
         ' 
         unameTxtBox.BackColor = Color.White
-        unameTxtBox.BaseColor = Color.FromArgb(CByte(44), CByte(55), CByte(66))
-        unameTxtBox.BorderColorA = Color.FromArgb(CByte(64), CByte(158), CByte(255))
-        unameTxtBox.BorderColorB = Color.FromArgb(CByte(220), CByte(223), CByte(230))
+        unameTxtBox.BaseColor = Color.FromArgb(44, 55, 66)
+        unameTxtBox.BorderColorA = Color.FromArgb(64, 158, 255)
+        unameTxtBox.BorderColorB = Color.FromArgb(220, 223, 230)
         unameTxtBox.Font = New Font("Segoe UI", 12F)
-        unameTxtBox.ForeColor = Color.FromArgb(CByte(48), CByte(49), CByte(51))
+        unameTxtBox.ForeColor = Color.FromArgb(48, 49, 51)
         unameTxtBox.Hint = ""
         unameTxtBox.Location = New Point(30, 65)
         unameTxtBox.MaxLength = 32767
@@ -348,9 +362,10 @@ Partial Class Landing
         ' mainPnl
         ' 
         mainPnl.BackgroundColor = Color.White
-        mainPnl.BorderColor = Color.FromArgb(CByte(150), CByte(150), CByte(150))
+        mainPnl.BorderColor = Color.FromArgb(150, 150, 150)
         mainPnl.BorderThickness = 1
         mainPnl.Controls.Add(calendarPnl)
+        mainPnl.Controls.Add(aboutPnl)
         mainPnl.Controls.Add(profilePnl)
         mainPnl.Controls.Add(dashPnl)
         mainPnl.Controls.Add(sidePnl)
@@ -370,59 +385,152 @@ Partial Class Landing
         ' 
         ' calendarPnl
         ' 
-        calendarPnl.Controls.Add(BigLabel17)
-        calendarPnl.Controls.Add(BigLabel18)
-        calendarPnl.Controls.Add(CrownButton1)
-        calendarPnl.Controls.Add(MonthCalendar1)
-        calendarPnl.Location = New Point(598, 39)
+        calendarPnl.Controls.Add(calendar)
+        calendarPnl.Location = New Point(421, 36)
         calendarPnl.Name = "calendarPnl"
-        calendarPnl.Size = New Size(311, 358)
-        calendarPnl.TabIndex = 0
+        calendarPnl.Size = New Size(768, 689)
+        calendarPnl.TabIndex = 48
         calendarPnl.Visible = False
         ' 
-        ' BigLabel17
+        ' aboutPnl
         ' 
-        BigLabel17.AutoSize = True
-        BigLabel17.BackColor = Color.Transparent
-        BigLabel17.Dock = DockStyle.Bottom
-        BigLabel17.Font = New Font("Segoe UI", 10F)
-        BigLabel17.ForeColor = Color.FromArgb(CByte(80), CByte(80), CByte(80))
-        BigLabel17.Location = New Point(0, 265)
-        BigLabel17.Name = "BigLabel17"
-        BigLabel17.Size = New Size(306, 28)
-        BigLabel17.TabIndex = 6
-        BigLabel17.Text = "RECOMMENDED RENEWAL DATE:"
+        aboutPnl.Controls.Add(TableLayoutPanel2)
+        aboutPnl.Controls.Add(descPnl)
+        aboutPnl.Location = New Point(1108, 32)
+        aboutPnl.Name = "aboutPnl"
+        aboutPnl.Padding = New Padding(7)
+        aboutPnl.Size = New Size(212, 562)
+        aboutPnl.TabIndex = 17
+        aboutPnl.Visible = False
         ' 
-        ' BigLabel18
+        ' TableLayoutPanel2
         ' 
-        BigLabel18.AutoSize = True
-        BigLabel18.BackColor = Color.Transparent
-        BigLabel18.Dock = DockStyle.Bottom
-        BigLabel18.Font = New Font("Segoe UI", 10F)
-        BigLabel18.ForeColor = Color.FromArgb(CByte(80), CByte(80), CByte(80))
-        BigLabel18.Location = New Point(0, 293)
-        BigLabel18.Name = "BigLabel18"
-        BigLabel18.Size = New Size(306, 28)
-        BigLabel18.TabIndex = 5
-        BigLabel18.Text = "RECOMMENDED RENEWAL DATE:"
+        TableLayoutPanel2.ColumnCount = 2
+        TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
+        TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
+        TableLayoutPanel2.Controls.Add(misPnl, 0, 0)
+        TableLayoutPanel2.Controls.Add(visPnl, 1, 0)
+        TableLayoutPanel2.Dock = DockStyle.Fill
+        TableLayoutPanel2.Location = New Point(7, 332)
+        TableLayoutPanel2.Name = "TableLayoutPanel2"
+        TableLayoutPanel2.RowCount = 1
+        TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Percent, 50F))
+        TableLayoutPanel2.Size = New Size(198, 223)
+        TableLayoutPanel2.TabIndex = 18
         ' 
-        ' CrownButton1
+        ' misPnl
         ' 
-        CrownButton1.Dock = DockStyle.Bottom
-        CrownButton1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        CrownButton1.Location = New Point(0, 321)
-        CrownButton1.Name = "CrownButton1"
-        CrownButton1.Padding = New Padding(5)
-        CrownButton1.Size = New Size(311, 37)
-        CrownButton1.TabIndex = 4
-        CrownButton1.Text = "CONTINUE"
+        misPnl.BackColor = Color.PaleTurquoise
+        misPnl.Controls.Add(mission_lbl)
+        misPnl.Controls.Add(mission)
+        misPnl.Dock = DockStyle.Fill
+        misPnl.Location = New Point(5, 5)
+        misPnl.Margin = New Padding(5)
+        misPnl.Name = "misPnl"
+        misPnl.Size = New Size(89, 213)
+        misPnl.TabIndex = 17
         ' 
-        ' MonthCalendar1
+        ' mission_lbl
         ' 
-        MonthCalendar1.Dock = DockStyle.Fill
-        MonthCalendar1.Location = New Point(0, 0)
-        MonthCalendar1.Name = "MonthCalendar1"
-        MonthCalendar1.TabIndex = 1
+        mission_lbl.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        mission_lbl.AutoSize = True
+        mission_lbl.BackColor = Color.Transparent
+        mission_lbl.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        mission_lbl.ForeColor = Color.FromArgb(80, 80, 80)
+        mission_lbl.Location = New Point(192, 14)
+        mission_lbl.Name = "mission_lbl"
+        mission_lbl.Size = New Size(116, 32)
+        mission_lbl.TabIndex = 2
+        mission_lbl.Text = "MISSION"
+        ' 
+        ' mission
+        ' 
+        mission.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        mission.AutoSize = True
+        mission.BackColor = Color.Transparent
+        mission.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        mission.ForeColor = Color.FromArgb(80, 80, 80)
+        mission.Location = New Point(66, 102)
+        mission.Name = "mission"
+        mission.Size = New Size(400, 128)
+        mission.TabIndex = 2
+        mission.Text = "To provide quality services and " + vbCrLf + "clear data in matters regarding " + vbCrLf + "the tricycle franchises, franchisee " + vbCrLf + "and renewal services."
+        ' 
+        ' visPnl
+        ' 
+        visPnl.BackColor = Color.PaleTurquoise
+        visPnl.Controls.Add(vision_lbl)
+        visPnl.Controls.Add(vision)
+        visPnl.Dock = DockStyle.Fill
+        visPnl.Location = New Point(104, 5)
+        visPnl.Margin = New Padding(5)
+        visPnl.Name = "visPnl"
+        visPnl.Size = New Size(89, 213)
+        visPnl.TabIndex = 16
+        ' 
+        ' vision_lbl
+        ' 
+        vision_lbl.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        vision_lbl.AutoSize = True
+        vision_lbl.BackColor = Color.Transparent
+        vision_lbl.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        vision_lbl.ForeColor = Color.FromArgb(80, 80, 80)
+        vision_lbl.Location = New Point(194, 14)
+        vision_lbl.Name = "vision_lbl"
+        vision_lbl.Size = New Size(96, 32)
+        vision_lbl.TabIndex = 3
+        vision_lbl.Text = "VISION"
+        ' 
+        ' vision
+        ' 
+        vision.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        vision.AutoSize = True
+        vision.BackColor = Color.Transparent
+        vision.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        vision.ForeColor = Color.FromArgb(80, 80, 80)
+        vision.Location = New Point(23, 107)
+        vision.Name = "vision"
+        vision.Size = New Size(459, 96)
+        vision.TabIndex = 4
+        vision.Text = "TFIS as a competitive, informative " + vbCrLf + "and reliable Information Management " + vbCrLf + "System globally."
+        ' 
+        ' descPnl
+        ' 
+        descPnl.BackColor = Color.PaleTurquoise
+        descPnl.Controls.Add(description)
+        descPnl.Controls.Add(description_lbl)
+        descPnl.Dock = DockStyle.Top
+        descPnl.Location = New Point(7, 7)
+        descPnl.Margin = New Padding(8)
+        descPnl.Name = "descPnl"
+        descPnl.Size = New Size(198, 325)
+        descPnl.TabIndex = 17
+        ' 
+        ' description
+        ' 
+        description.Anchor = AnchorStyles.Left Or AnchorStyles.Right
+        description.AutoSize = True
+        description.BackColor = Color.Transparent
+        description.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        description.ForeColor = Color.FromArgb(80, 80, 80)
+        description.Location = New Point(271, 116)
+        description.Name = "description"
+        description.Size = New Size(631, 96)
+        description.TabIndex = 1
+        description.Text = "Tricycle Franchising Information System is a system " + vbCrLf + "that  organizes and manages data regarding franchise" + vbCrLf + "management in the entire province. " + vbCrLf
+        ' 
+        ' description_lbl
+        ' 
+        description_lbl.AutoSize = True
+        description_lbl.BackColor = Color.Transparent
+        description_lbl.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        description_lbl.ForeColor = Color.FromArgb(80, 80, 80)
+        description_lbl.Location = New Point(468, 12)
+        description_lbl.Name = "description_lbl"
+        description_lbl.Size = New Size(178, 32)
+        description_lbl.TabIndex = 0
+        description_lbl.Text = "DESCRIPTION:"
+        description_lbl.TextAlign = ContentAlignment.TopCenter
         ' 
         ' profilePnl
         ' 
@@ -520,7 +628,7 @@ Partial Class Landing
         ' 
         ' PictureBox1
         ' 
-        PictureBox1.Image = My.Resources.Resources.My_Babie__2_
+        PictureBox1.InitialImage = CType(resources.GetObject("PictureBox1.InitialImage"), Image)
         PictureBox1.Location = New Point(22, 23)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(194, 186)
@@ -593,136 +701,137 @@ Partial Class Landing
         sidePnl.Controls.Add(HopeButton3)
         sidePnl.Controls.Add(HopeButton2)
         sidePnl.Controls.Add(HopeButton1)
-        sidePnl.Location = New Point(193, 39)
+        sidePnl.Dock = DockStyle.Left
+        sidePnl.Location = New Point(0, 0)
         sidePnl.Name = "sidePnl"
-        sidePnl.Size = New Size(336, 562)
+        sidePnl.Size = New Size(336, 790)
         sidePnl.TabIndex = 9
         sidePnl.Visible = False
         ' 
         ' HopeButton6
         ' 
-        HopeButton6.BorderColor = Color.FromArgb(CByte(220), CByte(223), CByte(230))
+        HopeButton6.BorderColor = Color.FromArgb(220, 223, 230)
         HopeButton6.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary
-        HopeButton6.DangerColor = Color.FromArgb(CByte(245), CByte(108), CByte(108))
-        HopeButton6.DefaultColor = Color.FromArgb(CByte(255), CByte(255), CByte(255))
+        HopeButton6.DangerColor = Color.FromArgb(245, 108, 108)
+        HopeButton6.DefaultColor = Color.FromArgb(255, 255, 255)
         HopeButton6.Dock = DockStyle.Top
         HopeButton6.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        HopeButton6.HoverTextColor = Color.FromArgb(CByte(48), CByte(49), CByte(51))
-        HopeButton6.InfoColor = Color.FromArgb(CByte(144), CByte(147), CByte(153))
+        HopeButton6.HoverTextColor = Color.FromArgb(48, 49, 51)
+        HopeButton6.InfoColor = Color.FromArgb(144, 147, 153)
         HopeButton6.Location = New Point(0, 300)
         HopeButton6.Name = "HopeButton6"
         HopeButton6.PrimaryColor = Color.PaleTurquoise
         HopeButton6.Size = New Size(336, 60)
-        HopeButton6.SuccessColor = Color.FromArgb(CByte(103), CByte(194), CByte(58))
+        HopeButton6.SuccessColor = Color.FromArgb(103, 194, 58)
         HopeButton6.TabIndex = 21
         HopeButton6.Text = "Logout"
         HopeButton6.TextColor = Color.White
-        HopeButton6.WarningColor = Color.FromArgb(CByte(230), CByte(162), CByte(60))
+        HopeButton6.WarningColor = Color.FromArgb(230, 162, 60)
         ' 
         ' HopeButton5
         ' 
-        HopeButton5.BorderColor = Color.FromArgb(CByte(220), CByte(223), CByte(230))
+        HopeButton5.BorderColor = Color.FromArgb(220, 223, 230)
         HopeButton5.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary
-        HopeButton5.DangerColor = Color.FromArgb(CByte(245), CByte(108), CByte(108))
-        HopeButton5.DefaultColor = Color.FromArgb(CByte(255), CByte(255), CByte(255))
+        HopeButton5.DangerColor = Color.FromArgb(245, 108, 108)
+        HopeButton5.DefaultColor = Color.FromArgb(255, 255, 255)
         HopeButton5.Dock = DockStyle.Top
         HopeButton5.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        HopeButton5.HoverTextColor = Color.FromArgb(CByte(48), CByte(49), CByte(51))
-        HopeButton5.InfoColor = Color.FromArgb(CByte(144), CByte(147), CByte(153))
+        HopeButton5.HoverTextColor = Color.FromArgb(48, 49, 51)
+        HopeButton5.InfoColor = Color.FromArgb(144, 147, 153)
         HopeButton5.Location = New Point(0, 240)
         HopeButton5.Name = "HopeButton5"
         HopeButton5.PrimaryColor = Color.PaleTurquoise
         HopeButton5.Size = New Size(336, 60)
-        HopeButton5.SuccessColor = Color.FromArgb(CByte(103), CByte(194), CByte(58))
+        HopeButton5.SuccessColor = Color.FromArgb(103, 194, 58)
         HopeButton5.TabIndex = 20
         HopeButton5.Text = "About Us"
         HopeButton5.TextColor = Color.White
-        HopeButton5.WarningColor = Color.FromArgb(CByte(230), CByte(162), CByte(60))
+        HopeButton5.WarningColor = Color.FromArgb(230, 162, 60)
         ' 
         ' HopeButton4
         ' 
-        HopeButton4.BorderColor = Color.FromArgb(CByte(220), CByte(223), CByte(230))
+        HopeButton4.BorderColor = Color.FromArgb(220, 223, 230)
         HopeButton4.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary
-        HopeButton4.DangerColor = Color.FromArgb(CByte(245), CByte(108), CByte(108))
-        HopeButton4.DefaultColor = Color.FromArgb(CByte(255), CByte(255), CByte(255))
+        HopeButton4.DangerColor = Color.FromArgb(245, 108, 108)
+        HopeButton4.DefaultColor = Color.FromArgb(255, 255, 255)
         HopeButton4.Dock = DockStyle.Top
         HopeButton4.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        HopeButton4.HoverTextColor = Color.FromArgb(CByte(48), CByte(49), CByte(51))
-        HopeButton4.InfoColor = Color.FromArgb(CByte(144), CByte(147), CByte(153))
+        HopeButton4.HoverTextColor = Color.FromArgb(48, 49, 51)
+        HopeButton4.InfoColor = Color.FromArgb(144, 147, 153)
         HopeButton4.Location = New Point(0, 180)
         HopeButton4.Name = "HopeButton4"
         HopeButton4.PrimaryColor = Color.PaleTurquoise
         HopeButton4.Size = New Size(336, 60)
-        HopeButton4.SuccessColor = Color.FromArgb(CByte(103), CByte(194), CByte(58))
+        HopeButton4.SuccessColor = Color.FromArgb(103, 194, 58)
         HopeButton4.TabIndex = 19
         HopeButton4.Text = "Track My Request"
         HopeButton4.TextColor = Color.White
-        HopeButton4.WarningColor = Color.FromArgb(CByte(230), CByte(162), CByte(60))
+        HopeButton4.WarningColor = Color.FromArgb(230, 162, 60)
         ' 
         ' HopeButton3
         ' 
-        HopeButton3.BorderColor = Color.FromArgb(CByte(220), CByte(223), CByte(230))
+        HopeButton3.BorderColor = Color.FromArgb(220, 223, 230)
         HopeButton3.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary
-        HopeButton3.DangerColor = Color.FromArgb(CByte(245), CByte(108), CByte(108))
-        HopeButton3.DefaultColor = Color.FromArgb(CByte(255), CByte(255), CByte(255))
+        HopeButton3.DangerColor = Color.FromArgb(245, 108, 108)
+        HopeButton3.DefaultColor = Color.FromArgb(255, 255, 255)
         HopeButton3.Dock = DockStyle.Top
         HopeButton3.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        HopeButton3.HoverTextColor = Color.FromArgb(CByte(48), CByte(49), CByte(51))
-        HopeButton3.InfoColor = Color.FromArgb(CByte(144), CByte(147), CByte(153))
+        HopeButton3.HoverTextColor = Color.FromArgb(48, 49, 51)
+        HopeButton3.InfoColor = Color.FromArgb(144, 147, 153)
         HopeButton3.Location = New Point(0, 120)
         HopeButton3.Name = "HopeButton3"
         HopeButton3.PrimaryColor = Color.PaleTurquoise
         HopeButton3.Size = New Size(336, 60)
-        HopeButton3.SuccessColor = Color.FromArgb(CByte(103), CByte(194), CByte(58))
+        HopeButton3.SuccessColor = Color.FromArgb(103, 194, 58)
         HopeButton3.TabIndex = 18
         HopeButton3.Text = "Services"
         HopeButton3.TextColor = Color.White
-        HopeButton3.WarningColor = Color.FromArgb(CByte(230), CByte(162), CByte(60))
+        HopeButton3.WarningColor = Color.FromArgb(230, 162, 60)
         ' 
         ' HopeButton2
         ' 
-        HopeButton2.BorderColor = Color.FromArgb(CByte(220), CByte(223), CByte(230))
+        HopeButton2.BorderColor = Color.FromArgb(220, 223, 230)
         HopeButton2.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary
-        HopeButton2.DangerColor = Color.FromArgb(CByte(245), CByte(108), CByte(108))
-        HopeButton2.DefaultColor = Color.FromArgb(CByte(255), CByte(255), CByte(255))
+        HopeButton2.DangerColor = Color.FromArgb(245, 108, 108)
+        HopeButton2.DefaultColor = Color.FromArgb(255, 255, 255)
         HopeButton2.Dock = DockStyle.Top
         HopeButton2.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        HopeButton2.HoverTextColor = Color.FromArgb(CByte(48), CByte(49), CByte(51))
-        HopeButton2.InfoColor = Color.FromArgb(CByte(144), CByte(147), CByte(153))
+        HopeButton2.HoverTextColor = Color.FromArgb(48, 49, 51)
+        HopeButton2.InfoColor = Color.FromArgb(144, 147, 153)
         HopeButton2.Location = New Point(0, 60)
         HopeButton2.Name = "HopeButton2"
         HopeButton2.PrimaryColor = Color.PaleTurquoise
         HopeButton2.Size = New Size(336, 60)
-        HopeButton2.SuccessColor = Color.FromArgb(CByte(103), CByte(194), CByte(58))
+        HopeButton2.SuccessColor = Color.FromArgb(103, 194, 58)
         HopeButton2.TabIndex = 17
         HopeButton2.Text = "My Profile"
         HopeButton2.TextColor = Color.White
-        HopeButton2.WarningColor = Color.FromArgb(CByte(230), CByte(162), CByte(60))
+        HopeButton2.WarningColor = Color.FromArgb(230, 162, 60)
         ' 
         ' HopeButton1
         ' 
-        HopeButton1.BorderColor = Color.FromArgb(CByte(220), CByte(223), CByte(230))
+        HopeButton1.BorderColor = Color.FromArgb(220, 223, 230)
         HopeButton1.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary
-        HopeButton1.DangerColor = Color.FromArgb(CByte(245), CByte(108), CByte(108))
-        HopeButton1.DefaultColor = Color.FromArgb(CByte(255), CByte(255), CByte(255))
+        HopeButton1.DangerColor = Color.FromArgb(245, 108, 108)
+        HopeButton1.DefaultColor = Color.FromArgb(255, 255, 255)
         HopeButton1.Dock = DockStyle.Top
         HopeButton1.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        HopeButton1.HoverTextColor = Color.FromArgb(CByte(48), CByte(49), CByte(51))
-        HopeButton1.InfoColor = Color.FromArgb(CByte(144), CByte(147), CByte(153))
+        HopeButton1.HoverTextColor = Color.FromArgb(48, 49, 51)
+        HopeButton1.InfoColor = Color.FromArgb(144, 147, 153)
         HopeButton1.Location = New Point(0, 0)
         HopeButton1.Name = "HopeButton1"
         HopeButton1.PrimaryColor = Color.PaleTurquoise
         HopeButton1.Size = New Size(336, 60)
-        HopeButton1.SuccessColor = Color.FromArgb(CByte(103), CByte(194), CByte(58))
+        HopeButton1.SuccessColor = Color.FromArgb(103, 194, 58)
         HopeButton1.TabIndex = 16
         HopeButton1.Text = "Dashboard"
         HopeButton1.TextColor = Color.White
-        HopeButton1.WarningColor = Color.FromArgb(CByte(230), CByte(162), CByte(60))
+        HopeButton1.WarningColor = Color.FromArgb(230, 162, 60)
         ' 
         ' signUpPnl
         ' 
         signUpPnl.BackgroundColor = Color.White
-        signUpPnl.BorderColor = Color.FromArgb(CByte(150), CByte(150), CByte(150))
+        signUpPnl.BorderColor = Color.FromArgb(150, 150, 150)
         signUpPnl.BorderThickness = 1
         signUpPnl.Controls.Add(returnLink)
         signUpPnl.Controls.Add(ComboBox1)
@@ -743,7 +852,7 @@ Partial Class Landing
         signUpPnl.Controls.Add(HopeTextBox2)
         signUpPnl.Controls.Add(BigLabel7)
         signUpPnl.IsDerivedStyle = True
-        signUpPnl.Location = New Point(95, 51)
+        signUpPnl.Location = New Point(598, 6)
         signUpPnl.Name = "signUpPnl"
         signUpPnl.Size = New Size(65, 535)
         signUpPnl.Style = ReaLTaiizor.Enum.Metro.Style.Light
@@ -755,7 +864,7 @@ Partial Class Landing
         ' 
         ' returnLink
         ' 
-        returnLink.ActiveLinkColor = Color.FromArgb(CByte(221), CByte(72), CByte(20))
+        returnLink.ActiveLinkColor = Color.FromArgb(221, 72, 20)
         returnLink.AutoSize = True
         returnLink.BackColor = Color.Transparent
         returnLink.Font = New Font("Segoe UI", 11F)
@@ -767,7 +876,7 @@ Partial Class Landing
         returnLink.TabIndex = 39
         returnLink.TabStop = True
         returnLink.Text = "Return to Sign In"
-        returnLink.VisitedLinkColor = Color.FromArgb(CByte(240), CByte(119), CByte(70))
+        returnLink.VisitedLinkColor = Color.FromArgb(240, 119, 70)
         ' 
         ' ComboBox1
         ' 
@@ -794,21 +903,21 @@ Partial Class Landing
         CyberButton1.Background_WidthPen = 4F
         CyberButton1.BackgroundPen = True
         CyberButton1.ColorBackground = Color.Black
-        CyberButton1.ColorBackground_1 = Color.FromArgb(CByte(37), CByte(52), CByte(68))
-        CyberButton1.ColorBackground_2 = Color.FromArgb(CByte(41), CByte(63), CByte(86))
+        CyberButton1.ColorBackground_1 = Color.FromArgb(37, 52, 68)
+        CyberButton1.ColorBackground_2 = Color.FromArgb(41, 63, 86)
         CyberButton1.ColorBackground_Pen = Color.Black
-        CyberButton1.ColorLighting = Color.FromArgb(CByte(29), CByte(200), CByte(238))
-        CyberButton1.ColorPen_1 = Color.FromArgb(CByte(37), CByte(52), CByte(68))
-        CyberButton1.ColorPen_2 = Color.FromArgb(CByte(41), CByte(63), CByte(86))
+        CyberButton1.ColorLighting = Color.FromArgb(29, 200, 238)
+        CyberButton1.ColorPen_1 = Color.FromArgb(37, 52, 68)
+        CyberButton1.ColorPen_2 = Color.FromArgb(41, 63, 86)
         CyberButton1.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom
         CyberButton1.Effect_1 = True
-        CyberButton1.Effect_1_ColorBackground = Color.FromArgb(CByte(29), CByte(200), CByte(238))
+        CyberButton1.Effect_1_ColorBackground = Color.FromArgb(29, 200, 238)
         CyberButton1.Effect_1_Transparency = 25
         CyberButton1.Effect_2 = True
         CyberButton1.Effect_2_ColorBackground = Color.White
         CyberButton1.Effect_2_Transparency = 20
-        CyberButton1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        CyberButton1.ForeColor = Color.FromArgb(CByte(245), CByte(245), CByte(245))
+        CyberButton1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        CyberButton1.ForeColor = Color.FromArgb(245, 245, 245)
         CyberButton1.Lighting = False
         CyberButton1.LinearGradient_Background = False
         CyberButton1.LinearGradientPen = False
@@ -894,11 +1003,11 @@ Partial Class Landing
         ' HopeTextBox11
         ' 
         HopeTextBox11.BackColor = Color.White
-        HopeTextBox11.BaseColor = Color.FromArgb(CByte(44), CByte(55), CByte(66))
-        HopeTextBox11.BorderColorA = Color.FromArgb(CByte(64), CByte(158), CByte(255))
-        HopeTextBox11.BorderColorB = Color.FromArgb(CByte(220), CByte(223), CByte(230))
+        HopeTextBox11.BaseColor = Color.FromArgb(44, 55, 66)
+        HopeTextBox11.BorderColorA = Color.FromArgb(64, 158, 255)
+        HopeTextBox11.BorderColorB = Color.FromArgb(220, 223, 230)
         HopeTextBox11.Font = New Font("Segoe UI", 12F)
-        HopeTextBox11.ForeColor = Color.FromArgb(CByte(48), CByte(49), CByte(51))
+        HopeTextBox11.ForeColor = Color.FromArgb(48, 49, 51)
         HopeTextBox11.Hint = "Zip Code"
         HopeTextBox11.Location = New Point(550, 375)
         HopeTextBox11.MaxLength = 32767
@@ -917,11 +1026,11 @@ Partial Class Landing
         ' HopeTextBox10
         ' 
         HopeTextBox10.BackColor = Color.White
-        HopeTextBox10.BaseColor = Color.FromArgb(CByte(44), CByte(55), CByte(66))
-        HopeTextBox10.BorderColorA = Color.FromArgb(CByte(64), CByte(158), CByte(255))
-        HopeTextBox10.BorderColorB = Color.FromArgb(CByte(220), CByte(223), CByte(230))
+        HopeTextBox10.BaseColor = Color.FromArgb(44, 55, 66)
+        HopeTextBox10.BorderColorA = Color.FromArgb(64, 158, 255)
+        HopeTextBox10.BorderColorB = Color.FromArgb(220, 223, 230)
         HopeTextBox10.Font = New Font("Segoe UI", 12F)
-        HopeTextBox10.ForeColor = Color.FromArgb(CByte(48), CByte(49), CByte(51))
+        HopeTextBox10.ForeColor = Color.FromArgb(48, 49, 51)
         HopeTextBox10.Hint = "Province"
         HopeTextBox10.Location = New Point(550, 319)
         HopeTextBox10.MaxLength = 32767
@@ -940,11 +1049,11 @@ Partial Class Landing
         ' HopeTextBox9
         ' 
         HopeTextBox9.BackColor = Color.White
-        HopeTextBox9.BaseColor = Color.FromArgb(CByte(44), CByte(55), CByte(66))
-        HopeTextBox9.BorderColorA = Color.FromArgb(CByte(64), CByte(158), CByte(255))
-        HopeTextBox9.BorderColorB = Color.FromArgb(CByte(220), CByte(223), CByte(230))
+        HopeTextBox9.BaseColor = Color.FromArgb(44, 55, 66)
+        HopeTextBox9.BorderColorA = Color.FromArgb(64, 158, 255)
+        HopeTextBox9.BorderColorB = Color.FromArgb(220, 223, 230)
         HopeTextBox9.Font = New Font("Segoe UI", 12F)
-        HopeTextBox9.ForeColor = Color.FromArgb(CByte(48), CByte(49), CByte(51))
+        HopeTextBox9.ForeColor = Color.FromArgb(48, 49, 51)
         HopeTextBox9.Hint = "Municipality"
         HopeTextBox9.Location = New Point(550, 265)
         HopeTextBox9.MaxLength = 32767
@@ -963,11 +1072,11 @@ Partial Class Landing
         ' HopeTextBox8
         ' 
         HopeTextBox8.BackColor = Color.White
-        HopeTextBox8.BaseColor = Color.FromArgb(CByte(44), CByte(55), CByte(66))
-        HopeTextBox8.BorderColorA = Color.FromArgb(CByte(64), CByte(158), CByte(255))
-        HopeTextBox8.BorderColorB = Color.FromArgb(CByte(220), CByte(223), CByte(230))
+        HopeTextBox8.BaseColor = Color.FromArgb(44, 55, 66)
+        HopeTextBox8.BorderColorA = Color.FromArgb(64, 158, 255)
+        HopeTextBox8.BorderColorB = Color.FromArgb(220, 223, 230)
         HopeTextBox8.Font = New Font("Segoe UI", 12F)
-        HopeTextBox8.ForeColor = Color.FromArgb(CByte(48), CByte(49), CByte(51))
+        HopeTextBox8.ForeColor = Color.FromArgb(48, 49, 51)
         HopeTextBox8.Hint = "Barangay"
         HopeTextBox8.Location = New Point(550, 211)
         HopeTextBox8.MaxLength = 32767
@@ -986,11 +1095,11 @@ Partial Class Landing
         ' HopeTextBox7
         ' 
         HopeTextBox7.BackColor = Color.White
-        HopeTextBox7.BaseColor = Color.FromArgb(CByte(44), CByte(55), CByte(66))
-        HopeTextBox7.BorderColorA = Color.FromArgb(CByte(64), CByte(158), CByte(255))
-        HopeTextBox7.BorderColorB = Color.FromArgb(CByte(220), CByte(223), CByte(230))
+        HopeTextBox7.BaseColor = Color.FromArgb(44, 55, 66)
+        HopeTextBox7.BorderColorA = Color.FromArgb(64, 158, 255)
+        HopeTextBox7.BorderColorB = Color.FromArgb(220, 223, 230)
         HopeTextBox7.Font = New Font("Segoe UI", 12F)
-        HopeTextBox7.ForeColor = Color.FromArgb(CByte(48), CByte(49), CByte(51))
+        HopeTextBox7.ForeColor = Color.FromArgb(48, 49, 51)
         HopeTextBox7.Hint = "Enter your Number"
         HopeTextBox7.Location = New Point(550, 117)
         HopeTextBox7.MaxLength = 32767
@@ -1009,11 +1118,11 @@ Partial Class Landing
         ' HopeTextBox4
         ' 
         HopeTextBox4.BackColor = Color.White
-        HopeTextBox4.BaseColor = Color.FromArgb(CByte(44), CByte(55), CByte(66))
-        HopeTextBox4.BorderColorA = Color.FromArgb(CByte(64), CByte(158), CByte(255))
-        HopeTextBox4.BorderColorB = Color.FromArgb(CByte(220), CByte(223), CByte(230))
+        HopeTextBox4.BaseColor = Color.FromArgb(44, 55, 66)
+        HopeTextBox4.BorderColorA = Color.FromArgb(64, 158, 255)
+        HopeTextBox4.BorderColorB = Color.FromArgb(220, 223, 230)
         HopeTextBox4.Font = New Font("Segoe UI", 12F)
-        HopeTextBox4.ForeColor = Color.FromArgb(CByte(48), CByte(49), CByte(51))
+        HopeTextBox4.ForeColor = Color.FromArgb(48, 49, 51)
         HopeTextBox4.Hint = "Last Name"
         HopeTextBox4.Location = New Point(18, 225)
         HopeTextBox4.MaxLength = 32767
@@ -1032,11 +1141,11 @@ Partial Class Landing
         ' HopeTextBox3
         ' 
         HopeTextBox3.BackColor = Color.White
-        HopeTextBox3.BaseColor = Color.FromArgb(CByte(44), CByte(55), CByte(66))
-        HopeTextBox3.BorderColorA = Color.FromArgb(CByte(64), CByte(158), CByte(255))
-        HopeTextBox3.BorderColorB = Color.FromArgb(CByte(220), CByte(223), CByte(230))
+        HopeTextBox3.BaseColor = Color.FromArgb(44, 55, 66)
+        HopeTextBox3.BorderColorA = Color.FromArgb(64, 158, 255)
+        HopeTextBox3.BorderColorB = Color.FromArgb(220, 223, 230)
         HopeTextBox3.Font = New Font("Segoe UI", 12F)
-        HopeTextBox3.ForeColor = Color.FromArgb(CByte(48), CByte(49), CByte(51))
+        HopeTextBox3.ForeColor = Color.FromArgb(48, 49, 51)
         HopeTextBox3.Hint = "Middle Name (Optional)"
         HopeTextBox3.Location = New Point(18, 171)
         HopeTextBox3.MaxLength = 32767
@@ -1055,11 +1164,11 @@ Partial Class Landing
         ' HopeTextBox2
         ' 
         HopeTextBox2.BackColor = Color.White
-        HopeTextBox2.BaseColor = Color.FromArgb(CByte(44), CByte(55), CByte(66))
-        HopeTextBox2.BorderColorA = Color.FromArgb(CByte(64), CByte(158), CByte(255))
-        HopeTextBox2.BorderColorB = Color.FromArgb(CByte(220), CByte(223), CByte(230))
+        HopeTextBox2.BaseColor = Color.FromArgb(44, 55, 66)
+        HopeTextBox2.BorderColorA = Color.FromArgb(64, 158, 255)
+        HopeTextBox2.BorderColorB = Color.FromArgb(220, 223, 230)
         HopeTextBox2.Font = New Font("Segoe UI", 12F)
-        HopeTextBox2.ForeColor = Color.FromArgb(CByte(48), CByte(49), CByte(51))
+        HopeTextBox2.ForeColor = Color.FromArgb(48, 49, 51)
         HopeTextBox2.Hint = "First Name"
         HopeTextBox2.Location = New Point(18, 117)
         HopeTextBox2.MaxLength = 32767
@@ -1079,13 +1188,19 @@ Partial Class Landing
         ' 
         BigLabel7.AutoSize = True
         BigLabel7.BackColor = Color.Transparent
-        BigLabel7.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BigLabel7.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0)
         BigLabel7.ForeColor = Color.Black
         BigLabel7.Location = New Point(18, 18)
         BigLabel7.Name = "BigLabel7"
         BigLabel7.Size = New Size(390, 48)
         BigLabel7.TabIndex = 22
         BigLabel7.Text = "CREATE AN ACCOUNT"
+        ' 
+        ' calendar
+        ' 
+        calendar.Location = New Point(233, 126)
+        calendar.Name = "calendar"
+        calendar.TabIndex = 0
         ' 
         ' Landing
         ' 
@@ -1107,7 +1222,14 @@ Partial Class Landing
         signInPnl.PerformLayout()
         mainPnl.ResumeLayout(False)
         calendarPnl.ResumeLayout(False)
-        calendarPnl.PerformLayout()
+        aboutPnl.ResumeLayout(False)
+        TableLayoutPanel2.ResumeLayout(False)
+        misPnl.ResumeLayout(False)
+        misPnl.PerformLayout()
+        visPnl.ResumeLayout(False)
+        visPnl.PerformLayout()
+        descPnl.ResumeLayout(False)
+        descPnl.PerformLayout()
         profilePnl.ResumeLayout(False)
         profilePnl.PerformLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
@@ -1179,10 +1301,18 @@ Partial Class Landing
     Friend WithEvents BigLabel14 As ReaLTaiizor.Controls.BigLabel
     Friend WithEvents BigLabel8 As ReaLTaiizor.Controls.BigLabel
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents aboutPnl As Panel
+    Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
+    Friend WithEvents misPnl As Panel
+    Friend WithEvents visPnl As Panel
+    Friend WithEvents descPnl As Panel
+    Friend WithEvents description_lbl As ReaLTaiizor.Controls.BigLabel
+    Friend WithEvents mission_lbl As ReaLTaiizor.Controls.BigLabel
+    Friend WithEvents mission As ReaLTaiizor.Controls.BigLabel
+    Friend WithEvents description As ReaLTaiizor.Controls.BigLabel
+    Friend WithEvents vision_lbl As ReaLTaiizor.Controls.BigLabel
+    Friend WithEvents vision As ReaLTaiizor.Controls.BigLabel
     Friend WithEvents calendarPnl As Panel
-    Friend WithEvents MonthCalendar1 As MonthCalendar
-    Friend WithEvents BigLabel17 As ReaLTaiizor.Controls.BigLabel
-    Friend WithEvents BigLabel18 As ReaLTaiizor.Controls.BigLabel
-    Friend WithEvents CrownButton1 As ReaLTaiizor.Controls.CrownButton
+    Friend WithEvents calendar As MonthCalendar
 
 End Class

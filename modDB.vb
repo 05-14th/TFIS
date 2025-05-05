@@ -8,10 +8,10 @@ Module modDB
     Public myadocon, conn As New MySqlConnection
     Public cmd As New MySqlCommand
     Public cmdRead As MySqlDataReader
-    Public db_server As String = "'localhost'"
-    Public db_uid As String = "'root'"
-    Public db_pwd As String = "''"
-    Public db_name As String = "'company'"
+    Public db_server As String = ""
+    Public db_uid As String = ""
+    Public db_pwd As String = ""
+    Public db_name As String = ""
     Public strConnection As String = "server=" & db_server & ";uid=" & db_uid & ";password=" & db_pwd & ";database=" & db_name & ";" & "allowuservariables='True';"
 
     Public Structure LoggedUser
@@ -25,23 +25,39 @@ Module modDB
 
     Public Sub UpdateConnectionString()
         Try
-            Dim config As String = System.IO.Directory.GetCurrentDirectory & "\config.txt"
-            Dim text As String = Nothing
-            If System.IO.File.Exists(config) Then
-                Using reader As System.IO.StreamReader = New System.IO.StreamReader(config)
+            Dim configPath As String = System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(), "config.txt")
 
-                    text = reader.ReadToEnd
-                End Using
-                Dim arr_text() As String = Split(text, vbCrLf)
-
-                strConnection = "server=" & Split(arr_text(0), "=")(1) & ";uid=" & Split(arr_text(1), "=")(1) & ";password=" & Split(arr_text(2), "=")(1) & ";database=" & Split(arr_text(3), "=")(1) & ";" & "allowuservariables='True';"
-            Else
-                MsgBox("Do not exist")
+            If Not System.IO.File.Exists(configPath) Then
+                MsgBox("Configuration file does not exist.", MsgBoxStyle.Exclamation)
+                Exit Sub
             End If
+
+            Dim lines() As String = System.IO.File.ReadAllLines(configPath)
+
+            If lines.Length < 4 Then
+                MsgBox("Configuration file is incomplete. Expected 4 lines: server, uid, password, and database.", MsgBoxStyle.Exclamation)
+                Exit Sub
+            End If
+
+            Dim server As String = GetValueFromLine(lines(0))
+            Dim uid As String = GetValueFromLine(lines(1))
+            Dim password As String = GetValueFromLine(lines(2))
+            Dim database As String = GetValueFromLine(lines(3))
+
+            strConnection = $"server={server};uid={uid};password={password};database={database};allowuservariables=True;"
         Catch ex As Exception
-            MsgBox(ex.Message, MsgBoxStyle.Critical)
+            MsgBox("Error: " & ex.Message, MsgBoxStyle.Critical)
         End Try
     End Sub
+
+    Private Function GetValueFromLine(line As String) As String
+        Dim parts() As String = line.Split("="c)
+        If parts.Length < 2 Then
+            Throw New FormatException("Invalid config line format: " & line)
+        End If
+        Return parts(1).Trim()
+    End Function
+
 
     Public CurrentLoggedUser As LoggedUser = Nothing
     Public Sub openConn(ByVal db_name As String)

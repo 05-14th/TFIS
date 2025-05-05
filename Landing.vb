@@ -19,10 +19,16 @@ Public Class Landing
         CenterControl(signInPnl, mainPnl)
     End Sub
 
-    Private Sub CenterControl(ctrl As Control, parent As Control)
-        Dim x As Integer = (parent.ClientSize.Width - ctrl.Width) \ 2
-        Dim y As Integer = (parent.ClientSize.Height - ctrl.Height) \ 2
-        ctrl.Location = New Point(x, y)
+    Private Sub CenterControl(ctrl As Control, parent As Control, ByVal Optional centerHori As Boolean = True, ByVal Optional centerVerti As Boolean = True)
+        If (centerHori AndAlso centerVerti) Then
+            Dim x As Integer = (parent.ClientSize.Width - ctrl.Width) \ 2
+            Dim y As Integer = (parent.ClientSize.Height - ctrl.Height) \ 2
+            ctrl.Location = New Point(x, y)
+        ElseIf (centerHori AndAlso centerVerti = False) Then
+            ctrl.Left = (ctrl.Parent.ClientSize.Width - ctrl.Width) \ 2
+        ElseIf (centerHori = False AndAlso centerVerti) Then
+            ctrl.Top = (ctrl.Parent.ClientSize.Height - ctrl.Height) \ 2
+        End If
     End Sub
 
     Private Sub DockControl(ctrl As Control, parent As Control, position As DockStyle)
@@ -47,6 +53,7 @@ Public Class Landing
     Private Sub Landing_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Resize(signInPnl, 551, 332)
         Resize(signUpPnl, 1043, 535)
+        UpdateConnectionString()
     End Sub
 
     Private Sub signUpLink_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles signUpLink.LinkClicked
@@ -69,14 +76,40 @@ Public Class Landing
         mainPnl.Controls.Clear()
         DockControl(profilePnl, mainPnl, DockStyle.Fill)
         DockControl(sidePnl, mainPnl, DockStyle.Left)
-        ShowOnly(profilePnl, dashPnl, profilePnl, calendarPnl)
+        ShowOnly(profilePnl, dashPnl, profilePnl, calendarPnl, aboutPnl)
     End Sub
 
     Private Sub HopeButton4_Click(sender As Object, e As EventArgs) Handles HopeButton4.Click
         mainPnl.Controls.Clear()
-        CenterControl(calendarPnl, mainPnl)
+        DockControl(calendarPnl, mainPnl, DockStyle.Fill)
         DockControl(sidePnl, mainPnl, DockStyle.Left)
-        ShowOnly(calendarPnl, dashPnl, profilePnl, calendarPnl)
+        ShowOnly(calendarPnl, dashPnl, profilePnl, calendarPnl, aboutPnl)
+        CenterControl(calendar, calendarPnl)
+        CenterControl(calendarPnl, mainPnl)
+    End Sub
+
+    Private Sub HopeButton3_Click(sender As Object, e As EventArgs) Handles HopeButton3.Click
+
+    End Sub
+
+    Private Sub HopeButton1_Click(sender As Object, e As EventArgs) Handles HopeButton1.Click
+        mainPnl.Controls.Clear()
+        DockControl(dashPnl, mainPnl, DockStyle.Fill)
+        DockControl(sidePnl, mainPnl, DockStyle.Left)
+        ShowOnly(dashPnl, dashPnl, profilePnl, calendarPnl, aboutPnl)
+    End Sub
+
+    Private Sub HopeButton5_Click(sender As Object, e As EventArgs) Handles HopeButton5.Click
+        mainPnl.Controls.Clear()
+        DockControl(aboutPnl, mainPnl, DockStyle.Fill)
+        DockControl(sidePnl, mainPnl, DockStyle.Left)
+        ShowOnly(aboutPnl, dashPnl, profilePnl, calendarPnl, aboutPnl)
+        CenterControl(vision, visPnl)
+        CenterControl(mission, misPnl)
+        CenterControl(description, descPnl)
+        CenterControl(vision_lbl, visPnl, centerVerti:=False)
+        CenterControl(mission_lbl, misPnl, centerVerti:=False)
+        CenterControl(description_lbl, descPnl, centerVerti:=False)
     End Sub
 End Class
 
