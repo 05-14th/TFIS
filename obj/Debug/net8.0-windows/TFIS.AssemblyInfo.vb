@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("TFIS"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c10a444d7920924948ba222d56877eaba44d853"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a27e47c4f931038167b6540b3197b05e08651e96"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("TFIS"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("TFIS"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

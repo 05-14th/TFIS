@@ -1,8 +1,65 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Landing.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LoginAdminHome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LoginAdminLOGIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LoginFirstPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LoginFranchiseeLOGIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LoginFranchiseeSU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LoginSecondPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LoginThirdPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="RegisterAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UserControl1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControl10.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControl11.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControl12.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControl13.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControl5.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControl7.1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControl7.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControl8.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControl9.vb">
+      <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
 </Project>

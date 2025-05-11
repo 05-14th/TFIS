@@ -47,6 +47,9 @@ Public Class Landing
             isVisible(dashPnl, True)
             DockControl(dashPnl, mainPnl, DockStyle.Fill)
             DockControl(sidePnl, mainPnl, DockStyle.Left)
+        ElseIf unameTxtBox.Text = "admin" And passTxtBox.Text = "admin" Then
+            Dim form1 As New Form1()
+            form1.Show()
         End If
     End Sub
 
