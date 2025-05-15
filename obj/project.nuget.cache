@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rUoCvQM3IXs=",
+  "dgSpecHash": "WDuNKgdtHDU=",
   "success": true,
   "projectFilePath": "E:\\TFIS\\TFIS.vbproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\CodeDemonz\\.nuget\\packages\\k4os.hash.xxhash\\1.0.8\\k4os.hash.xxhash.1.0.8.nupkg.sha512",
     "C:\\Users\\CodeDemonz\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\CodeDemonz\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\CodeDemonz\\.nuget\\packages\\microsoft.visualbasic\\10.3.0\\microsoft.visualbasic.10.3.0.nupkg.sha512",
     "C:\\Users\\CodeDemonz\\.nuget\\packages\\mysql.data\\9.3.0\\mysql.data.9.3.0.nupkg.sha512",
     "C:\\Users\\CodeDemonz\\.nuget\\packages\\realtaiizor\\3.8.1.2\\realtaiizor.3.8.1.2.nupkg.sha512",
     "C:\\Users\\CodeDemonz\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",

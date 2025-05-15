@@ -36,7 +36,7 @@ Public Class Landing
         parent.Controls.Add(ctrl)
     End Sub
 
-    Private Sub Resize(ctrl As Control, x As Integer, y As Integer)
+    Private Sub Resize_(ctrl As Control, x As Integer, y As Integer)
         ctrl.Size = New Size(x, y)
     End Sub
 
@@ -54,8 +54,8 @@ Public Class Landing
     End Sub
 
     Private Sub Landing_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Resize(signInPnl, 551, 332)
-        Resize(signUpPnl, 1043, 535)
+        Resize_(signInPnl, 551, 332)
+        Resize_(signUpPnl, 1043, 535)
         UpdateConnectionString()
     End Sub
 

@@ -31,9 +31,7 @@ Partial Class Form1
         Button10 = New Button()
         Button9 = New Button()
         Button8 = New Button()
-        BtnReports = New Button()
         Submenupanel = New Panel()
-        Button7 = New Button()
         Button6 = New Button()
         Button5 = New Button()
         Button4 = New Button()
@@ -48,17 +46,21 @@ Partial Class Form1
         IconDropDownButton1 = New FontAwesome.Sharp.IconDropDownButton()
         IconDropDownButton2 = New FontAwesome.Sharp.IconDropDownButton()
         PictureBox2 = New PictureBox()
-        Panel2 = New Panel()
+        mainPnl = New Panel()
         Button1 = New Button()
         BtnFullScreen = New Button()
         Panel3 = New Panel()
+        BtnReports = New Button()
+        Button13 = New Button()
+        Button7 = New Button()
+        Button14 = New Button()
         PanelDashboard.SuspendLayout()
         ReportsSubpanel.SuspendLayout()
         Submenupanel.SuspendLayout()
         Panel1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
-        Panel2.SuspendLayout()
+        mainPnl.SuspendLayout()
         Panel3.SuspendLayout()
         SuspendLayout()
         ' 
@@ -88,7 +90,7 @@ Partial Class Form1
         ReportsSubpanel.Controls.Add(Button9)
         ReportsSubpanel.Controls.Add(Button8)
         ReportsSubpanel.Dock = DockStyle.Top
-        ReportsSubpanel.Location = New Point(0, 846)
+        ReportsSubpanel.Location = New Point(0, 942)
         ReportsSubpanel.Name = "ReportsSubpanel"
         ReportsSubpanel.Size = New Size(432, 240)
         ReportsSubpanel.TabIndex = 13
@@ -203,31 +205,11 @@ Partial Class Form1
         Button8.TextAlign = ContentAlignment.MiddleLeft
         Button8.UseVisualStyleBackColor = False
         ' 
-        ' BtnReports
-        ' 
-        BtnReports.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        BtnReports.BackColor = Color.LightCoral
-        BtnReports.Dock = DockStyle.Top
-        BtnReports.FlatAppearance.BorderSize = 0
-        BtnReports.FlatAppearance.MouseDownBackColor = Color.DimGray
-        BtnReports.FlatAppearance.MouseOverBackColor = Color.DimGray
-        BtnReports.FlatStyle = FlatStyle.Flat
-        BtnReports.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        BtnReports.ForeColor = SystemColors.ButtonHighlight
-        BtnReports.Image = My.Resources.Resources.Reports
-        BtnReports.ImageAlign = ContentAlignment.MiddleLeft
-        BtnReports.Location = New Point(0, 770)
-        BtnReports.Margin = New Padding(4)
-        BtnReports.Name = "BtnReports"
-        BtnReports.Padding = New Padding(12, 0, 0, 0)
-        BtnReports.Size = New Size(432, 76)
-        BtnReports.TabIndex = 12
-        BtnReports.Text = "Reports"
-        BtnReports.UseVisualStyleBackColor = False
-        ' 
         ' Submenupanel
         ' 
+        Submenupanel.Controls.Add(Button14)
         Submenupanel.Controls.Add(Button7)
+        Submenupanel.Controls.Add(Button13)
         Submenupanel.Controls.Add(Button6)
         Submenupanel.Controls.Add(Button5)
         Submenupanel.Controls.Add(Button4)
@@ -236,30 +218,8 @@ Partial Class Form1
         Submenupanel.Dock = DockStyle.Top
         Submenupanel.Location = New Point(0, 482)
         Submenupanel.Name = "Submenupanel"
-        Submenupanel.Size = New Size(432, 288)
+        Submenupanel.Size = New Size(432, 384)
         Submenupanel.TabIndex = 11
-        ' 
-        ' Button7
-        ' 
-        Button7.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        Button7.BackColor = Color.White
-        Button7.Dock = DockStyle.Top
-        Button7.FlatAppearance.BorderSize = 0
-        Button7.FlatAppearance.MouseDownBackColor = Color.DimGray
-        Button7.FlatAppearance.MouseOverBackColor = Color.DimGray
-        Button7.FlatStyle = FlatStyle.Flat
-        Button7.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button7.ForeColor = SystemColors.ActiveCaptionText
-        Button7.ImageAlign = ContentAlignment.MiddleLeft
-        Button7.Location = New Point(0, 240)
-        Button7.Margin = New Padding(4)
-        Button7.Name = "Button7"
-        Button7.Padding = New Padding(12, 0, 0, 0)
-        Button7.Size = New Size(432, 48)
-        Button7.TabIndex = 16
-        Button7.Text = "Route Assignment"
-        Button7.TextAlign = ContentAlignment.MiddleLeft
-        Button7.UseVisualStyleBackColor = False
         ' 
         ' Button6
         ' 
@@ -384,7 +344,7 @@ Partial Class Form1
         BtnLogout.ForeColor = SystemColors.ButtonHighlight
         BtnLogout.Image = My.Resources.Resources.Log_Out__1_
         BtnLogout.ImageAlign = ContentAlignment.MiddleLeft
-        BtnLogout.Location = New Point(0, 1086)
+        BtnLogout.Location = New Point(0, 1182)
         BtnLogout.Margin = New Padding(4)
         BtnLogout.Name = "BtnLogout"
         BtnLogout.Padding = New Padding(12, 0, 0, 0)
@@ -482,7 +442,7 @@ Partial Class Form1
         ' 
         PictureBox2.Anchor = AnchorStyles.None
         PictureBox2.Image = My.Resources.Resources._22c4b23f_2706_4e11_bf6e_07bc0e18684b_removebg_preview
-        PictureBox2.Location = New Point(177, 74)
+        PictureBox2.Location = New Point(195, 298)
         PictureBox2.Margin = New Padding(4)
         PictureBox2.Name = "PictureBox2"
         PictureBox2.Size = New Size(558, 496)
@@ -490,17 +450,17 @@ Partial Class Form1
         PictureBox2.TabIndex = 0
         PictureBox2.TabStop = False
         ' 
-        ' Panel2
+        ' mainPnl
         ' 
-        Panel2.BackColor = Color.GhostWhite
-        Panel2.BackgroundImageLayout = ImageLayout.Center
-        Panel2.Controls.Add(PictureBox2)
-        Panel2.Dock = DockStyle.Fill
-        Panel2.Location = New Point(458, 66)
-        Panel2.Margin = New Padding(4)
-        Panel2.Name = "Panel2"
-        Panel2.Size = New Size(904, 984)
-        Panel2.TabIndex = 3
+        mainPnl.BackColor = Color.GhostWhite
+        mainPnl.BackgroundImageLayout = ImageLayout.Center
+        mainPnl.Controls.Add(PictureBox2)
+        mainPnl.Dock = DockStyle.Fill
+        mainPnl.Location = New Point(458, 66)
+        mainPnl.Margin = New Padding(4)
+        mainPnl.Name = "mainPnl"
+        mainPnl.Size = New Size(904, 984)
+        mainPnl.TabIndex = 3
         ' 
         ' Button1
         ' 
@@ -547,13 +507,101 @@ Partial Class Form1
         Panel3.Size = New Size(904, 66)
         Panel3.TabIndex = 2
         ' 
+        ' BtnReports
+        ' 
+        BtnReports.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        BtnReports.BackColor = Color.LightCoral
+        BtnReports.Dock = DockStyle.Top
+        BtnReports.FlatAppearance.BorderSize = 0
+        BtnReports.FlatAppearance.MouseDownBackColor = Color.DimGray
+        BtnReports.FlatAppearance.MouseOverBackColor = Color.DimGray
+        BtnReports.FlatStyle = FlatStyle.Flat
+        BtnReports.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BtnReports.ForeColor = SystemColors.ButtonHighlight
+        BtnReports.Image = My.Resources.Resources.Reports
+        BtnReports.ImageAlign = ContentAlignment.MiddleLeft
+        BtnReports.Location = New Point(0, 866)
+        BtnReports.Margin = New Padding(4)
+        BtnReports.Name = "BtnReports"
+        BtnReports.Padding = New Padding(12, 0, 0, 0)
+        BtnReports.Size = New Size(432, 76)
+        BtnReports.TabIndex = 12
+        BtnReports.Text = "Reports"
+        BtnReports.UseVisualStyleBackColor = False
+        ' 
+        ' Button13
+        ' 
+        Button13.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        Button13.BackColor = Color.White
+        Button13.Dock = DockStyle.Top
+        Button13.FlatAppearance.BorderSize = 0
+        Button13.FlatAppearance.MouseDownBackColor = Color.DimGray
+        Button13.FlatAppearance.MouseOverBackColor = Color.DimGray
+        Button13.FlatStyle = FlatStyle.Flat
+        Button13.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button13.ForeColor = SystemColors.ActiveCaptionText
+        Button13.ImageAlign = ContentAlignment.MiddleLeft
+        Button13.Location = New Point(0, 240)
+        Button13.Margin = New Padding(4)
+        Button13.Name = "Button13"
+        Button13.Padding = New Padding(12, 0, 0, 0)
+        Button13.Size = New Size(432, 48)
+        Button13.TabIndex = 18
+        Button13.Text = "Route Assignment"
+        Button13.TextAlign = ContentAlignment.MiddleLeft
+        Button13.UseVisualStyleBackColor = False
+        ' 
+        ' Button7
+        ' 
+        Button7.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        Button7.BackColor = Color.White
+        Button7.Dock = DockStyle.Top
+        Button7.FlatAppearance.BorderSize = 0
+        Button7.FlatAppearance.MouseDownBackColor = Color.DimGray
+        Button7.FlatAppearance.MouseOverBackColor = Color.DimGray
+        Button7.FlatStyle = FlatStyle.Flat
+        Button7.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button7.ForeColor = SystemColors.ActiveCaptionText
+        Button7.ImageAlign = ContentAlignment.MiddleLeft
+        Button7.Location = New Point(0, 288)
+        Button7.Margin = New Padding(4)
+        Button7.Name = "Button7"
+        Button7.Padding = New Padding(12, 0, 0, 0)
+        Button7.Size = New Size(432, 48)
+        Button7.TabIndex = 19
+        Button7.Text = "User Management"
+        Button7.TextAlign = ContentAlignment.MiddleLeft
+        Button7.UseVisualStyleBackColor = False
+        ' 
+        ' Button14
+        ' 
+        Button14.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        Button14.BackColor = Color.White
+        Button14.Dock = DockStyle.Top
+        Button14.FlatAppearance.BorderSize = 0
+        Button14.FlatAppearance.MouseDownBackColor = Color.DimGray
+        Button14.FlatAppearance.MouseOverBackColor = Color.DimGray
+        Button14.FlatStyle = FlatStyle.Flat
+        Button14.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button14.ForeColor = SystemColors.ActiveCaptionText
+        Button14.ImageAlign = ContentAlignment.MiddleLeft
+        Button14.Location = New Point(0, 336)
+        Button14.Margin = New Padding(4)
+        Button14.Name = "Button14"
+        Button14.Padding = New Padding(12, 0, 0, 0)
+        Button14.Size = New Size(432, 48)
+        Button14.TabIndex = 20
+        Button14.Text = "Data Recovery"
+        Button14.TextAlign = ContentAlignment.MiddleLeft
+        Button14.UseVisualStyleBackColor = False
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(10.0F, 25.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.LavenderBlush
         ClientSize = New Size(1362, 1050)
-        Controls.Add(Panel2)
+        Controls.Add(mainPnl)
         Controls.Add(Panel3)
         Controls.Add(PanelDashboard)
         FormBorderStyle = FormBorderStyle.None
@@ -568,7 +616,7 @@ Partial Class Form1
         Panel1.ResumeLayout(False)
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
-        Panel2.ResumeLayout(False)
+        mainPnl.ResumeLayout(False)
         Panel3.ResumeLayout(False)
         ResumeLayout(False)
     End Sub
@@ -589,8 +637,6 @@ Partial Class Form1
     Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents Button7 As Button
-    Friend WithEvents BtnReports As Button
     Friend WithEvents ReportsSubpanel As Panel
     Friend WithEvents Button12 As Button
     Friend WithEvents Button11 As Button
@@ -598,9 +644,13 @@ Partial Class Form1
     Friend WithEvents Button9 As Button
     Friend WithEvents Button8 As Button
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents Panel2 As Panel
+    Friend WithEvents mainPnl As Panel
     Friend WithEvents Button1 As Button
     Friend WithEvents BtnFullScreen As Button
     Friend WithEvents Panel3 As Panel
+    Friend WithEvents BtnReports As Button
+    Friend WithEvents Button14 As Button
+    Friend WithEvents Button7 As Button
+    Friend WithEvents Button13 As Button
 
 End Class
