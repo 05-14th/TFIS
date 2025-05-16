@@ -22,8 +22,8 @@ Partial Class franchiseForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        DateTimePicker1 = New DateTimePicker()
-        ForeverButton1 = New ReaLTaiizor.Controls.ForeverButton()
+        lrd_dt = New DateTimePicker()
+        franchisee_save = New ReaLTaiizor.Controls.ForeverButton()
         BigLabel1 = New ReaLTaiizor.Controls.BigLabel()
         BigLabel2 = New ReaLTaiizor.Controls.BigLabel()
         BigLabel3 = New ReaLTaiizor.Controls.BigLabel()
@@ -39,45 +39,45 @@ Partial Class franchiseForm
         BigLabel25 = New ReaLTaiizor.Controls.BigLabel()
         BigLabel26 = New ReaLTaiizor.Controls.BigLabel()
         BigLabel27 = New ReaLTaiizor.Controls.BigLabel()
-        BigTextBox1 = New ReaLTaiizor.Controls.BigTextBox()
-        BigTextBox5 = New ReaLTaiizor.Controls.BigTextBox()
-        BigTextBox10 = New ReaLTaiizor.Controls.BigTextBox()
-        BigTextBox11 = New ReaLTaiizor.Controls.BigTextBox()
-        BigTextBox12 = New ReaLTaiizor.Controls.BigTextBox()
-        BigTextBox13 = New ReaLTaiizor.Controls.BigTextBox()
-        BigTextBox14 = New ReaLTaiizor.Controls.BigTextBox()
-        BigTextBox15 = New ReaLTaiizor.Controls.BigTextBox()
-        DateTimePicker2 = New DateTimePicker()
+        franchise_txtbox = New ReaLTaiizor.Controls.BigTextBox()
+        route_txtbox = New ReaLTaiizor.Controls.BigTextBox()
+        ln_txtbox = New ReaLTaiizor.Controls.BigTextBox()
+        assoc_txtbox = New ReaLTaiizor.Controls.BigTextBox()
+        fd_txtbox = New ReaLTaiizor.Controls.BigTextBox()
+        pn_txtbox = New ReaLTaiizor.Controls.BigTextBox()
+        tn_txtbox = New ReaLTaiizor.Controls.BigTextBox()
+        ap_txtbox = New ReaLTaiizor.Controls.BigTextBox()
+        ed_dt = New DateTimePicker()
         TableLayoutPanel1 = New TableLayoutPanel()
-        MaterialComboBox4 = New ReaLTaiizor.Controls.MaterialComboBox()
-        MaterialComboBox3 = New ReaLTaiizor.Controls.MaterialComboBox()
-        MaterialComboBox1 = New ReaLTaiizor.Controls.MaterialComboBox()
-        MaterialComboBox2 = New ReaLTaiizor.Controls.MaterialComboBox()
-        DateTimePicker3 = New DateTimePicker()
+        area_cb = New ReaLTaiizor.Controls.MaterialComboBox()
+        status_cb = New ReaLTaiizor.Controls.MaterialComboBox()
+        franchisee_cb = New ReaLTaiizor.Controls.MaterialComboBox()
+        ft_cb = New ReaLTaiizor.Controls.MaterialComboBox()
+        di_dt = New DateTimePicker()
         TableLayoutPanel1.SuspendLayout()
         SuspendLayout()
         ' 
-        ' DateTimePicker1
+        ' lrd_dt
         ' 
-        DateTimePicker1.Dock = DockStyle.Fill
-        DateTimePicker1.Location = New Point(659, 211)
-        DateTimePicker1.Name = "DateTimePicker1"
-        DateTimePicker1.Size = New Size(317, 31)
-        DateTimePicker1.TabIndex = 53
+        lrd_dt.Dock = DockStyle.Fill
+        lrd_dt.Location = New Point(659, 211)
+        lrd_dt.Name = "lrd_dt"
+        lrd_dt.Size = New Size(317, 31)
+        lrd_dt.TabIndex = 53
         ' 
-        ' ForeverButton1
+        ' franchisee_save
         ' 
-        ForeverButton1.BackColor = Color.Transparent
-        ForeverButton1.BaseColor = Color.FromArgb(CByte(0), CByte(192), CByte(192))
-        ForeverButton1.Dock = DockStyle.Top
-        ForeverButton1.Font = New Font("Segoe UI", 12F)
-        ForeverButton1.Location = New Point(659, 492)
-        ForeverButton1.Name = "ForeverButton1"
-        ForeverButton1.Rounded = False
-        ForeverButton1.Size = New Size(317, 60)
-        ForeverButton1.TabIndex = 52
-        ForeverButton1.Text = "SAVE"
-        ForeverButton1.TextColor = Color.FromArgb(CByte(243), CByte(243), CByte(243))
+        franchisee_save.BackColor = Color.Transparent
+        franchisee_save.BaseColor = Color.FromArgb(CByte(0), CByte(192), CByte(192))
+        franchisee_save.Dock = DockStyle.Top
+        franchisee_save.Font = New Font("Segoe UI", 12F)
+        franchisee_save.Location = New Point(659, 492)
+        franchisee_save.Name = "franchisee_save"
+        franchisee_save.Rounded = False
+        franchisee_save.Size = New Size(317, 60)
+        franchisee_save.TabIndex = 52
+        franchisee_save.Text = "SAVE"
+        franchisee_save.TextColor = Color.FromArgb(CByte(243), CByte(243), CByte(243))
         ' 
         ' BigLabel1
         ' 
@@ -90,7 +90,7 @@ Partial Class franchiseForm
         BigLabel1.Name = "BigLabel1"
         BigLabel1.Size = New Size(322, 32)
         BigLabel1.TabIndex = 1
-        BigLabel1.Text = "Franchisee ID"
+        BigLabel1.Text = "Franchise ID"
         ' 
         ' BigLabel2
         ' 
@@ -274,149 +274,149 @@ Partial Class franchiseForm
         BigLabel27.TabIndex = 27
         BigLabel27.Text = "Amount Paid"
         ' 
-        ' BigTextBox1
+        ' franchise_txtbox
         ' 
-        BigTextBox1.BackColor = Color.Transparent
-        BigTextBox1.Dock = DockStyle.Fill
-        BigTextBox1.Font = New Font("Tahoma", 11F)
-        BigTextBox1.ForeColor = Color.DimGray
-        BigTextBox1.Image = Nothing
-        BigTextBox1.Location = New Point(3, 35)
-        BigTextBox1.MaxLength = 32767
-        BigTextBox1.Multiline = False
-        BigTextBox1.Name = "BigTextBox1"
-        BigTextBox1.ReadOnly = False
-        BigTextBox1.Size = New Size(322, 50)
-        BigTextBox1.TabIndex = 37
-        BigTextBox1.TextAlignment = HorizontalAlignment.Left
-        BigTextBox1.UseSystemPasswordChar = False
+        franchise_txtbox.BackColor = Color.Transparent
+        franchise_txtbox.Dock = DockStyle.Fill
+        franchise_txtbox.Font = New Font("Tahoma", 11F)
+        franchise_txtbox.ForeColor = Color.DimGray
+        franchise_txtbox.Image = Nothing
+        franchise_txtbox.Location = New Point(3, 35)
+        franchise_txtbox.MaxLength = 32767
+        franchise_txtbox.Multiline = False
+        franchise_txtbox.Name = "franchise_txtbox"
+        franchise_txtbox.ReadOnly = False
+        franchise_txtbox.Size = New Size(322, 50)
+        franchise_txtbox.TabIndex = 37
+        franchise_txtbox.TextAlignment = HorizontalAlignment.Left
+        franchise_txtbox.UseSystemPasswordChar = False
         ' 
-        ' BigTextBox5
+        ' route_txtbox
         ' 
-        BigTextBox5.BackColor = Color.Transparent
-        BigTextBox5.Dock = DockStyle.Fill
-        BigTextBox5.Font = New Font("Tahoma", 11F)
-        BigTextBox5.ForeColor = Color.DimGray
-        BigTextBox5.Image = Nothing
-        BigTextBox5.Location = New Point(331, 123)
-        BigTextBox5.MaxLength = 32767
-        BigTextBox5.Multiline = False
-        BigTextBox5.Name = "BigTextBox5"
-        BigTextBox5.ReadOnly = False
-        BigTextBox5.Size = New Size(322, 50)
-        BigTextBox5.TabIndex = 41
-        BigTextBox5.TextAlignment = HorizontalAlignment.Left
-        BigTextBox5.UseSystemPasswordChar = False
+        route_txtbox.BackColor = Color.Transparent
+        route_txtbox.Dock = DockStyle.Fill
+        route_txtbox.Font = New Font("Tahoma", 11F)
+        route_txtbox.ForeColor = Color.DimGray
+        route_txtbox.Image = Nothing
+        route_txtbox.Location = New Point(331, 123)
+        route_txtbox.MaxLength = 32767
+        route_txtbox.Multiline = False
+        route_txtbox.Name = "route_txtbox"
+        route_txtbox.ReadOnly = False
+        route_txtbox.Size = New Size(322, 50)
+        route_txtbox.TabIndex = 41
+        route_txtbox.TextAlignment = HorizontalAlignment.Left
+        route_txtbox.UseSystemPasswordChar = False
         ' 
-        ' BigTextBox10
+        ' ln_txtbox
         ' 
-        BigTextBox10.BackColor = Color.Transparent
-        BigTextBox10.Dock = DockStyle.Fill
-        BigTextBox10.Font = New Font("Tahoma", 11F)
-        BigTextBox10.ForeColor = Color.DimGray
-        BigTextBox10.Image = Nothing
-        BigTextBox10.Location = New Point(3, 298)
-        BigTextBox10.MaxLength = 32767
-        BigTextBox10.Multiline = False
-        BigTextBox10.Name = "BigTextBox10"
-        BigTextBox10.ReadOnly = False
-        BigTextBox10.Size = New Size(322, 50)
-        BigTextBox10.TabIndex = 46
-        BigTextBox10.TextAlignment = HorizontalAlignment.Left
-        BigTextBox10.UseSystemPasswordChar = False
+        ln_txtbox.BackColor = Color.Transparent
+        ln_txtbox.Dock = DockStyle.Fill
+        ln_txtbox.Font = New Font("Tahoma", 11F)
+        ln_txtbox.ForeColor = Color.DimGray
+        ln_txtbox.Image = Nothing
+        ln_txtbox.Location = New Point(3, 298)
+        ln_txtbox.MaxLength = 32767
+        ln_txtbox.Multiline = False
+        ln_txtbox.Name = "ln_txtbox"
+        ln_txtbox.ReadOnly = False
+        ln_txtbox.Size = New Size(322, 50)
+        ln_txtbox.TabIndex = 46
+        ln_txtbox.TextAlignment = HorizontalAlignment.Left
+        ln_txtbox.UseSystemPasswordChar = False
         ' 
-        ' BigTextBox11
+        ' assoc_txtbox
         ' 
-        BigTextBox11.BackColor = Color.Transparent
-        BigTextBox11.Dock = DockStyle.Fill
-        BigTextBox11.Font = New Font("Tahoma", 11F)
-        BigTextBox11.ForeColor = Color.DimGray
-        BigTextBox11.Image = Nothing
-        BigTextBox11.Location = New Point(331, 298)
-        BigTextBox11.MaxLength = 32767
-        BigTextBox11.Multiline = False
-        BigTextBox11.Name = "BigTextBox11"
-        BigTextBox11.ReadOnly = False
-        BigTextBox11.Size = New Size(322, 50)
-        BigTextBox11.TabIndex = 47
-        BigTextBox11.TextAlignment = HorizontalAlignment.Left
-        BigTextBox11.UseSystemPasswordChar = False
+        assoc_txtbox.BackColor = Color.Transparent
+        assoc_txtbox.Dock = DockStyle.Fill
+        assoc_txtbox.Font = New Font("Tahoma", 11F)
+        assoc_txtbox.ForeColor = Color.DimGray
+        assoc_txtbox.Image = Nothing
+        assoc_txtbox.Location = New Point(331, 298)
+        assoc_txtbox.MaxLength = 32767
+        assoc_txtbox.Multiline = False
+        assoc_txtbox.Name = "assoc_txtbox"
+        assoc_txtbox.ReadOnly = False
+        assoc_txtbox.Size = New Size(322, 50)
+        assoc_txtbox.TabIndex = 47
+        assoc_txtbox.TextAlignment = HorizontalAlignment.Left
+        assoc_txtbox.UseSystemPasswordChar = False
         ' 
-        ' BigTextBox12
+        ' fd_txtbox
         ' 
-        BigTextBox12.BackColor = Color.Transparent
-        BigTextBox12.Dock = DockStyle.Fill
-        BigTextBox12.Font = New Font("Tahoma", 11F)
-        BigTextBox12.ForeColor = Color.DimGray
-        BigTextBox12.Image = Nothing
-        BigTextBox12.Location = New Point(659, 298)
-        BigTextBox12.MaxLength = 32767
-        BigTextBox12.Multiline = False
-        BigTextBox12.Name = "BigTextBox12"
-        BigTextBox12.ReadOnly = False
-        BigTextBox12.Size = New Size(317, 50)
-        BigTextBox12.TabIndex = 48
-        BigTextBox12.TextAlignment = HorizontalAlignment.Left
-        BigTextBox12.UseSystemPasswordChar = False
+        fd_txtbox.BackColor = Color.Transparent
+        fd_txtbox.Dock = DockStyle.Fill
+        fd_txtbox.Font = New Font("Tahoma", 11F)
+        fd_txtbox.ForeColor = Color.DimGray
+        fd_txtbox.Image = Nothing
+        fd_txtbox.Location = New Point(659, 298)
+        fd_txtbox.MaxLength = 32767
+        fd_txtbox.Multiline = False
+        fd_txtbox.Name = "fd_txtbox"
+        fd_txtbox.ReadOnly = False
+        fd_txtbox.Size = New Size(317, 50)
+        fd_txtbox.TabIndex = 48
+        fd_txtbox.TextAlignment = HorizontalAlignment.Left
+        fd_txtbox.UseSystemPasswordChar = False
         ' 
-        ' BigTextBox13
+        ' pn_txtbox
         ' 
-        BigTextBox13.BackColor = Color.Transparent
-        BigTextBox13.Dock = DockStyle.Fill
-        BigTextBox13.Font = New Font("Tahoma", 11F)
-        BigTextBox13.ForeColor = Color.DimGray
-        BigTextBox13.Image = Nothing
-        BigTextBox13.Location = New Point(3, 386)
-        BigTextBox13.MaxLength = 32767
-        BigTextBox13.Multiline = False
-        BigTextBox13.Name = "BigTextBox13"
-        BigTextBox13.ReadOnly = False
-        BigTextBox13.Size = New Size(322, 50)
-        BigTextBox13.TabIndex = 49
-        BigTextBox13.TextAlignment = HorizontalAlignment.Left
-        BigTextBox13.UseSystemPasswordChar = False
+        pn_txtbox.BackColor = Color.Transparent
+        pn_txtbox.Dock = DockStyle.Fill
+        pn_txtbox.Font = New Font("Tahoma", 11F)
+        pn_txtbox.ForeColor = Color.DimGray
+        pn_txtbox.Image = Nothing
+        pn_txtbox.Location = New Point(3, 386)
+        pn_txtbox.MaxLength = 32767
+        pn_txtbox.Multiline = False
+        pn_txtbox.Name = "pn_txtbox"
+        pn_txtbox.ReadOnly = False
+        pn_txtbox.Size = New Size(322, 50)
+        pn_txtbox.TabIndex = 49
+        pn_txtbox.TextAlignment = HorizontalAlignment.Left
+        pn_txtbox.UseSystemPasswordChar = False
         ' 
-        ' BigTextBox14
+        ' tn_txtbox
         ' 
-        BigTextBox14.BackColor = Color.Transparent
-        BigTextBox14.Dock = DockStyle.Fill
-        BigTextBox14.Font = New Font("Tahoma", 11F)
-        BigTextBox14.ForeColor = Color.DimGray
-        BigTextBox14.Image = Nothing
-        BigTextBox14.Location = New Point(331, 386)
-        BigTextBox14.MaxLength = 32767
-        BigTextBox14.Multiline = False
-        BigTextBox14.Name = "BigTextBox14"
-        BigTextBox14.ReadOnly = False
-        BigTextBox14.Size = New Size(322, 50)
-        BigTextBox14.TabIndex = 50
-        BigTextBox14.TextAlignment = HorizontalAlignment.Left
-        BigTextBox14.UseSystemPasswordChar = False
+        tn_txtbox.BackColor = Color.Transparent
+        tn_txtbox.Dock = DockStyle.Fill
+        tn_txtbox.Font = New Font("Tahoma", 11F)
+        tn_txtbox.ForeColor = Color.DimGray
+        tn_txtbox.Image = Nothing
+        tn_txtbox.Location = New Point(331, 386)
+        tn_txtbox.MaxLength = 32767
+        tn_txtbox.Multiline = False
+        tn_txtbox.Name = "tn_txtbox"
+        tn_txtbox.ReadOnly = False
+        tn_txtbox.Size = New Size(322, 50)
+        tn_txtbox.TabIndex = 50
+        tn_txtbox.TextAlignment = HorizontalAlignment.Left
+        tn_txtbox.UseSystemPasswordChar = False
         ' 
-        ' BigTextBox15
+        ' ap_txtbox
         ' 
-        BigTextBox15.BackColor = Color.Transparent
-        BigTextBox15.Dock = DockStyle.Fill
-        BigTextBox15.Font = New Font("Tahoma", 11F)
-        BigTextBox15.ForeColor = Color.DimGray
-        BigTextBox15.Image = Nothing
-        BigTextBox15.Location = New Point(659, 386)
-        BigTextBox15.MaxLength = 32767
-        BigTextBox15.Multiline = False
-        BigTextBox15.Name = "BigTextBox15"
-        BigTextBox15.ReadOnly = False
-        BigTextBox15.Size = New Size(317, 50)
-        BigTextBox15.TabIndex = 51
-        BigTextBox15.TextAlignment = HorizontalAlignment.Left
-        BigTextBox15.UseSystemPasswordChar = False
+        ap_txtbox.BackColor = Color.Transparent
+        ap_txtbox.Dock = DockStyle.Fill
+        ap_txtbox.Font = New Font("Tahoma", 11F)
+        ap_txtbox.ForeColor = Color.DimGray
+        ap_txtbox.Image = Nothing
+        ap_txtbox.Location = New Point(659, 386)
+        ap_txtbox.MaxLength = 32767
+        ap_txtbox.Multiline = False
+        ap_txtbox.Name = "ap_txtbox"
+        ap_txtbox.ReadOnly = False
+        ap_txtbox.Size = New Size(317, 50)
+        ap_txtbox.TabIndex = 51
+        ap_txtbox.TextAlignment = HorizontalAlignment.Left
+        ap_txtbox.UseSystemPasswordChar = False
         ' 
-        ' DateTimePicker2
+        ' ed_dt
         ' 
-        DateTimePicker2.Dock = DockStyle.Fill
-        DateTimePicker2.Location = New Point(659, 123)
-        DateTimePicker2.Name = "DateTimePicker2"
-        DateTimePicker2.Size = New Size(317, 31)
-        DateTimePicker2.TabIndex = 54
+        ed_dt.Dock = DockStyle.Fill
+        ed_dt.Location = New Point(659, 123)
+        ed_dt.Name = "ed_dt"
+        ed_dt.Size = New Size(317, 31)
+        ed_dt.TabIndex = 54
         ' 
         ' TableLayoutPanel1
         ' 
@@ -424,20 +424,20 @@ Partial Class franchiseForm
         TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
         TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
         TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 323F))
-        TableLayoutPanel1.Controls.Add(MaterialComboBox4, 1, 5)
-        TableLayoutPanel1.Controls.Add(MaterialComboBox3, 1, 1)
-        TableLayoutPanel1.Controls.Add(MaterialComboBox1, 0, 5)
-        TableLayoutPanel1.Controls.Add(MaterialComboBox2, 0, 3)
-        TableLayoutPanel1.Controls.Add(DateTimePicker3, 2, 1)
-        TableLayoutPanel1.Controls.Add(DateTimePicker2, 2, 3)
-        TableLayoutPanel1.Controls.Add(BigTextBox15, 2, 9)
-        TableLayoutPanel1.Controls.Add(BigTextBox14, 1, 9)
-        TableLayoutPanel1.Controls.Add(BigTextBox13, 0, 9)
-        TableLayoutPanel1.Controls.Add(BigTextBox12, 2, 7)
-        TableLayoutPanel1.Controls.Add(BigTextBox11, 1, 7)
-        TableLayoutPanel1.Controls.Add(BigTextBox10, 0, 7)
-        TableLayoutPanel1.Controls.Add(BigTextBox5, 1, 3)
-        TableLayoutPanel1.Controls.Add(BigTextBox1, 0, 1)
+        TableLayoutPanel1.Controls.Add(area_cb, 1, 5)
+        TableLayoutPanel1.Controls.Add(status_cb, 1, 1)
+        TableLayoutPanel1.Controls.Add(franchisee_cb, 0, 5)
+        TableLayoutPanel1.Controls.Add(ft_cb, 0, 3)
+        TableLayoutPanel1.Controls.Add(di_dt, 2, 1)
+        TableLayoutPanel1.Controls.Add(ed_dt, 2, 3)
+        TableLayoutPanel1.Controls.Add(ap_txtbox, 2, 9)
+        TableLayoutPanel1.Controls.Add(tn_txtbox, 1, 9)
+        TableLayoutPanel1.Controls.Add(pn_txtbox, 0, 9)
+        TableLayoutPanel1.Controls.Add(fd_txtbox, 2, 7)
+        TableLayoutPanel1.Controls.Add(assoc_txtbox, 1, 7)
+        TableLayoutPanel1.Controls.Add(ln_txtbox, 0, 7)
+        TableLayoutPanel1.Controls.Add(route_txtbox, 1, 3)
+        TableLayoutPanel1.Controls.Add(franchise_txtbox, 0, 1)
         TableLayoutPanel1.Controls.Add(BigLabel27, 2, 8)
         TableLayoutPanel1.Controls.Add(BigLabel26, 1, 8)
         TableLayoutPanel1.Controls.Add(BigLabel25, 0, 8)
@@ -453,8 +453,8 @@ Partial Class franchiseForm
         TableLayoutPanel1.Controls.Add(BigLabel3, 2, 0)
         TableLayoutPanel1.Controls.Add(BigLabel2, 1, 0)
         TableLayoutPanel1.Controls.Add(BigLabel1, 0, 0)
-        TableLayoutPanel1.Controls.Add(ForeverButton1, 2, 11)
-        TableLayoutPanel1.Controls.Add(DateTimePicker1, 2, 5)
+        TableLayoutPanel1.Controls.Add(franchisee_save, 2, 11)
+        TableLayoutPanel1.Controls.Add(lrd_dt, 2, 5)
         TableLayoutPanel1.Dock = DockStyle.Fill
         TableLayoutPanel1.Location = New Point(0, 0)
         TableLayoutPanel1.Name = "TableLayoutPanel1"
@@ -474,108 +474,108 @@ Partial Class franchiseForm
         TableLayoutPanel1.Size = New Size(979, 985)
         TableLayoutPanel1.TabIndex = 0
         ' 
-        ' MaterialComboBox4
+        ' area_cb
         ' 
-        MaterialComboBox4.AutoResize = False
-        MaterialComboBox4.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(255))
-        MaterialComboBox4.Depth = 0
-        MaterialComboBox4.Dock = DockStyle.Fill
-        MaterialComboBox4.DrawMode = DrawMode.OwnerDrawVariable
-        MaterialComboBox4.DropDownHeight = 174
-        MaterialComboBox4.DropDownStyle = ComboBoxStyle.DropDownList
-        MaterialComboBox4.DropDownWidth = 121
-        MaterialComboBox4.Font = New Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Pixel)
-        MaterialComboBox4.ForeColor = Color.FromArgb(CByte(222), CByte(0), CByte(0), CByte(0))
-        MaterialComboBox4.FormattingEnabled = True
-        MaterialComboBox4.IntegralHeight = False
-        MaterialComboBox4.ItemHeight = 43
-        MaterialComboBox4.Items.AddRange(New Object() {"Basud", "Daet", "Mercedes", "Vinzons", "Talisay", "Labo", "Paracale", "Capalonga", "Jose Panganiban", "San Lorenzo Ruiz", "San Vicente", "Sta Elena"})
-        MaterialComboBox4.Location = New Point(331, 211)
-        MaterialComboBox4.MaxDropDownItems = 4
-        MaterialComboBox4.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT
-        MaterialComboBox4.Name = "MaterialComboBox4"
-        MaterialComboBox4.Size = New Size(322, 49)
-        MaterialComboBox4.StartIndex = 0
-        MaterialComboBox4.TabIndex = 66
+        area_cb.AutoResize = False
+        area_cb.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(255))
+        area_cb.Depth = 0
+        area_cb.Dock = DockStyle.Fill
+        area_cb.DrawMode = DrawMode.OwnerDrawVariable
+        area_cb.DropDownHeight = 174
+        area_cb.DropDownStyle = ComboBoxStyle.DropDownList
+        area_cb.DropDownWidth = 121
+        area_cb.Font = New Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Pixel)
+        area_cb.ForeColor = Color.FromArgb(CByte(222), CByte(0), CByte(0), CByte(0))
+        area_cb.FormattingEnabled = True
+        area_cb.IntegralHeight = False
+        area_cb.ItemHeight = 43
+        area_cb.Items.AddRange(New Object() {"Basud", "Daet", "Mercedes", "Vinzons", "Talisay", "Labo", "Paracale", "Capalonga", "Jose Panganiban", "San Lorenzo Ruiz", "San Vicente", "Sta Elena"})
+        area_cb.Location = New Point(331, 211)
+        area_cb.MaxDropDownItems = 4
+        area_cb.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT
+        area_cb.Name = "area_cb"
+        area_cb.Size = New Size(322, 49)
+        area_cb.StartIndex = 0
+        area_cb.TabIndex = 66
         ' 
-        ' MaterialComboBox3
+        ' status_cb
         ' 
-        MaterialComboBox3.AutoResize = False
-        MaterialComboBox3.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(255))
-        MaterialComboBox3.Depth = 0
-        MaterialComboBox3.Dock = DockStyle.Fill
-        MaterialComboBox3.DrawMode = DrawMode.OwnerDrawVariable
-        MaterialComboBox3.DropDownHeight = 174
-        MaterialComboBox3.DropDownStyle = ComboBoxStyle.DropDownList
-        MaterialComboBox3.DropDownWidth = 121
-        MaterialComboBox3.Font = New Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Pixel)
-        MaterialComboBox3.ForeColor = Color.FromArgb(CByte(222), CByte(0), CByte(0), CByte(0))
-        MaterialComboBox3.FormattingEnabled = True
-        MaterialComboBox3.IntegralHeight = False
-        MaterialComboBox3.ItemHeight = 43
-        MaterialComboBox3.Items.AddRange(New Object() {"Active", "Suspended", "Expired"})
-        MaterialComboBox3.Location = New Point(331, 35)
-        MaterialComboBox3.MaxDropDownItems = 4
-        MaterialComboBox3.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT
-        MaterialComboBox3.Name = "MaterialComboBox3"
-        MaterialComboBox3.Size = New Size(322, 49)
-        MaterialComboBox3.StartIndex = 0
-        MaterialComboBox3.TabIndex = 65
+        status_cb.AutoResize = False
+        status_cb.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(255))
+        status_cb.Depth = 0
+        status_cb.Dock = DockStyle.Fill
+        status_cb.DrawMode = DrawMode.OwnerDrawVariable
+        status_cb.DropDownHeight = 174
+        status_cb.DropDownStyle = ComboBoxStyle.DropDownList
+        status_cb.DropDownWidth = 121
+        status_cb.Font = New Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Pixel)
+        status_cb.ForeColor = Color.FromArgb(CByte(222), CByte(0), CByte(0), CByte(0))
+        status_cb.FormattingEnabled = True
+        status_cb.IntegralHeight = False
+        status_cb.ItemHeight = 43
+        status_cb.Items.AddRange(New Object() {"Active", "Suspended", "Expired"})
+        status_cb.Location = New Point(331, 35)
+        status_cb.MaxDropDownItems = 4
+        status_cb.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT
+        status_cb.Name = "status_cb"
+        status_cb.Size = New Size(322, 49)
+        status_cb.StartIndex = 0
+        status_cb.TabIndex = 65
         ' 
-        ' MaterialComboBox1
+        ' franchisee_cb
         ' 
-        MaterialComboBox1.AutoResize = False
-        MaterialComboBox1.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(255))
-        MaterialComboBox1.Depth = 0
-        MaterialComboBox1.Dock = DockStyle.Fill
-        MaterialComboBox1.DrawMode = DrawMode.OwnerDrawVariable
-        MaterialComboBox1.DropDownHeight = 174
-        MaterialComboBox1.DropDownStyle = ComboBoxStyle.DropDownList
-        MaterialComboBox1.DropDownWidth = 121
-        MaterialComboBox1.Font = New Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Pixel)
-        MaterialComboBox1.ForeColor = Color.FromArgb(CByte(222), CByte(0), CByte(0), CByte(0))
-        MaterialComboBox1.FormattingEnabled = True
-        MaterialComboBox1.IntegralHeight = False
-        MaterialComboBox1.ItemHeight = 43
-        MaterialComboBox1.Location = New Point(3, 211)
-        MaterialComboBox1.MaxDropDownItems = 4
-        MaterialComboBox1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT
-        MaterialComboBox1.Name = "MaterialComboBox1"
-        MaterialComboBox1.Size = New Size(322, 49)
-        MaterialComboBox1.StartIndex = 0
-        MaterialComboBox1.TabIndex = 64
+        franchisee_cb.AutoResize = False
+        franchisee_cb.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(255))
+        franchisee_cb.Depth = 0
+        franchisee_cb.Dock = DockStyle.Fill
+        franchisee_cb.DrawMode = DrawMode.OwnerDrawVariable
+        franchisee_cb.DropDownHeight = 174
+        franchisee_cb.DropDownStyle = ComboBoxStyle.DropDownList
+        franchisee_cb.DropDownWidth = 121
+        franchisee_cb.Font = New Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Pixel)
+        franchisee_cb.ForeColor = Color.FromArgb(CByte(222), CByte(0), CByte(0), CByte(0))
+        franchisee_cb.FormattingEnabled = True
+        franchisee_cb.IntegralHeight = False
+        franchisee_cb.ItemHeight = 43
+        franchisee_cb.Location = New Point(3, 211)
+        franchisee_cb.MaxDropDownItems = 4
+        franchisee_cb.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT
+        franchisee_cb.Name = "franchisee_cb"
+        franchisee_cb.Size = New Size(322, 49)
+        franchisee_cb.StartIndex = 0
+        franchisee_cb.TabIndex = 64
         ' 
-        ' MaterialComboBox2
+        ' ft_cb
         ' 
-        MaterialComboBox2.AutoResize = False
-        MaterialComboBox2.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(255))
-        MaterialComboBox2.Depth = 0
-        MaterialComboBox2.Dock = DockStyle.Fill
-        MaterialComboBox2.DrawMode = DrawMode.OwnerDrawVariable
-        MaterialComboBox2.DropDownHeight = 174
-        MaterialComboBox2.DropDownStyle = ComboBoxStyle.DropDownList
-        MaterialComboBox2.DropDownWidth = 121
-        MaterialComboBox2.Font = New Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Pixel)
-        MaterialComboBox2.ForeColor = Color.FromArgb(CByte(222), CByte(0), CByte(0), CByte(0))
-        MaterialComboBox2.FormattingEnabled = True
-        MaterialComboBox2.IntegralHeight = False
-        MaterialComboBox2.ItemHeight = 43
-        MaterialComboBox2.Items.AddRange(New Object() {"New", "Renewal"})
-        MaterialComboBox2.Location = New Point(3, 123)
-        MaterialComboBox2.MaxDropDownItems = 4
-        MaterialComboBox2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT
-        MaterialComboBox2.Name = "MaterialComboBox2"
-        MaterialComboBox2.Size = New Size(322, 49)
-        MaterialComboBox2.StartIndex = 0
-        MaterialComboBox2.TabIndex = 63
+        ft_cb.AutoResize = False
+        ft_cb.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(255))
+        ft_cb.Depth = 0
+        ft_cb.Dock = DockStyle.Fill
+        ft_cb.DrawMode = DrawMode.OwnerDrawVariable
+        ft_cb.DropDownHeight = 174
+        ft_cb.DropDownStyle = ComboBoxStyle.DropDownList
+        ft_cb.DropDownWidth = 121
+        ft_cb.Font = New Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Pixel)
+        ft_cb.ForeColor = Color.FromArgb(CByte(222), CByte(0), CByte(0), CByte(0))
+        ft_cb.FormattingEnabled = True
+        ft_cb.IntegralHeight = False
+        ft_cb.ItemHeight = 43
+        ft_cb.Items.AddRange(New Object() {"New", "Renewal"})
+        ft_cb.Location = New Point(3, 123)
+        ft_cb.MaxDropDownItems = 4
+        ft_cb.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT
+        ft_cb.Name = "ft_cb"
+        ft_cb.Size = New Size(322, 49)
+        ft_cb.StartIndex = 0
+        ft_cb.TabIndex = 63
         ' 
-        ' DateTimePicker3
+        ' di_dt
         ' 
-        DateTimePicker3.Dock = DockStyle.Fill
-        DateTimePicker3.Location = New Point(659, 35)
-        DateTimePicker3.Name = "DateTimePicker3"
-        DateTimePicker3.Size = New Size(317, 31)
-        DateTimePicker3.TabIndex = 55
+        di_dt.Dock = DockStyle.Fill
+        di_dt.Location = New Point(659, 35)
+        di_dt.Name = "di_dt"
+        di_dt.Size = New Size(317, 31)
+        di_dt.TabIndex = 55
         ' 
         ' franchiseForm
         ' 
@@ -589,8 +589,8 @@ Partial Class franchiseForm
         ResumeLayout(False)
     End Sub
 
-    Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents ForeverButton1 As ReaLTaiizor.Controls.ForeverButton
+    Friend WithEvents lrd_dt As DateTimePicker
+    Friend WithEvents franchisee_save As ReaLTaiizor.Controls.ForeverButton
     Friend WithEvents BigLabel1 As ReaLTaiizor.Controls.BigLabel
     Friend WithEvents BigLabel2 As ReaLTaiizor.Controls.BigLabel
     Friend WithEvents BigLabel3 As ReaLTaiizor.Controls.BigLabel
@@ -606,20 +606,20 @@ Partial Class franchiseForm
     Friend WithEvents BigLabel25 As ReaLTaiizor.Controls.BigLabel
     Friend WithEvents BigLabel26 As ReaLTaiizor.Controls.BigLabel
     Friend WithEvents BigLabel27 As ReaLTaiizor.Controls.BigLabel
-    Friend WithEvents BigTextBox1 As ReaLTaiizor.Controls.BigTextBox
-    Friend WithEvents BigTextBox5 As ReaLTaiizor.Controls.BigTextBox
-    Friend WithEvents BigTextBox10 As ReaLTaiizor.Controls.BigTextBox
-    Friend WithEvents BigTextBox11 As ReaLTaiizor.Controls.BigTextBox
-    Friend WithEvents BigTextBox12 As ReaLTaiizor.Controls.BigTextBox
-    Friend WithEvents BigTextBox13 As ReaLTaiizor.Controls.BigTextBox
-    Friend WithEvents BigTextBox14 As ReaLTaiizor.Controls.BigTextBox
-    Friend WithEvents BigTextBox15 As ReaLTaiizor.Controls.BigTextBox
-    Friend WithEvents DateTimePicker2 As DateTimePicker
+    Friend WithEvents franchise_txtbox As ReaLTaiizor.Controls.BigTextBox
+    Friend WithEvents route_txtbox As ReaLTaiizor.Controls.BigTextBox
+    Friend WithEvents ln_txtbox As ReaLTaiizor.Controls.BigTextBox
+    Friend WithEvents assoc_txtbox As ReaLTaiizor.Controls.BigTextBox
+    Friend WithEvents fd_txtbox As ReaLTaiizor.Controls.BigTextBox
+    Friend WithEvents pn_txtbox As ReaLTaiizor.Controls.BigTextBox
+    Friend WithEvents tn_txtbox As ReaLTaiizor.Controls.BigTextBox
+    Friend WithEvents ap_txtbox As ReaLTaiizor.Controls.BigTextBox
+    Friend WithEvents ed_dt As DateTimePicker
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
-    Friend WithEvents DateTimePicker3 As DateTimePicker
-    Friend WithEvents MaterialComboBox4 As ReaLTaiizor.Controls.MaterialComboBox
-    Friend WithEvents MaterialComboBox3 As ReaLTaiizor.Controls.MaterialComboBox
-    Friend WithEvents MaterialComboBox1 As ReaLTaiizor.Controls.MaterialComboBox
-    Friend WithEvents MaterialComboBox2 As ReaLTaiizor.Controls.MaterialComboBox
+    Friend WithEvents di_dt As DateTimePicker
+    Friend WithEvents area_cb As ReaLTaiizor.Controls.MaterialComboBox
+    Friend WithEvents status_cb As ReaLTaiizor.Controls.MaterialComboBox
+    Friend WithEvents franchisee_cb As ReaLTaiizor.Controls.MaterialComboBox
+    Friend WithEvents ft_cb As ReaLTaiizor.Controls.MaterialComboBox
 
 End Class

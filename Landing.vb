@@ -51,12 +51,16 @@ Public Class Landing
             Dim form1 As New Form1()
             form1.Show()
         End If
+
+        Me.Hide()
     End Sub
 
     Private Sub Landing_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Resize_(signInPnl, 551, 332)
         Resize_(signUpPnl, 1043, 535)
-        UpdateConnectionString()
+        If (isConnectedToLocalServer() = False) Then
+            MsgBox("Unable to connect to database.", vbOK + vbCritical, "Warning")
+        End If
     End Sub
 
     Private Sub signUpLink_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles signUpLink.LinkClicked

@@ -19,6 +19,9 @@
     <Compile Update="renewalForm.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="routeAssignForm.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="vehicleForm.vb">
       <SubType>UserControl</SubType>
     </Compile>

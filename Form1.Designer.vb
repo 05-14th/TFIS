@@ -31,7 +31,11 @@ Partial Class Form1
         Button10 = New Button()
         Button9 = New Button()
         Button8 = New Button()
+        BtnReports = New Button()
         Submenupanel = New Panel()
+        Button14 = New Button()
+        Button7 = New Button()
+        Button13 = New Button()
         Button6 = New Button()
         Button5 = New Button()
         Button4 = New Button()
@@ -50,10 +54,6 @@ Partial Class Form1
         Button1 = New Button()
         BtnFullScreen = New Button()
         Panel3 = New Panel()
-        BtnReports = New Button()
-        Button13 = New Button()
-        Button7 = New Button()
-        Button14 = New Button()
         PanelDashboard.SuspendLayout()
         ReportsSubpanel.SuspendLayout()
         Submenupanel.SuspendLayout()
@@ -205,6 +205,28 @@ Partial Class Form1
         Button8.TextAlign = ContentAlignment.MiddleLeft
         Button8.UseVisualStyleBackColor = False
         ' 
+        ' BtnReports
+        ' 
+        BtnReports.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        BtnReports.BackColor = Color.LightCoral
+        BtnReports.Dock = DockStyle.Top
+        BtnReports.FlatAppearance.BorderSize = 0
+        BtnReports.FlatAppearance.MouseDownBackColor = Color.DimGray
+        BtnReports.FlatAppearance.MouseOverBackColor = Color.DimGray
+        BtnReports.FlatStyle = FlatStyle.Flat
+        BtnReports.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BtnReports.ForeColor = SystemColors.ButtonHighlight
+        BtnReports.Image = My.Resources.Resources.Reports
+        BtnReports.ImageAlign = ContentAlignment.MiddleLeft
+        BtnReports.Location = New Point(0, 866)
+        BtnReports.Margin = New Padding(4)
+        BtnReports.Name = "BtnReports"
+        BtnReports.Padding = New Padding(12, 0, 0, 0)
+        BtnReports.Size = New Size(432, 76)
+        BtnReports.TabIndex = 12
+        BtnReports.Text = "Reports"
+        BtnReports.UseVisualStyleBackColor = False
+        ' 
         ' Submenupanel
         ' 
         Submenupanel.Controls.Add(Button14)
@@ -220,6 +242,72 @@ Partial Class Form1
         Submenupanel.Name = "Submenupanel"
         Submenupanel.Size = New Size(432, 384)
         Submenupanel.TabIndex = 11
+        ' 
+        ' Button14
+        ' 
+        Button14.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        Button14.BackColor = Color.White
+        Button14.Dock = DockStyle.Top
+        Button14.FlatAppearance.BorderSize = 0
+        Button14.FlatAppearance.MouseDownBackColor = Color.DimGray
+        Button14.FlatAppearance.MouseOverBackColor = Color.DimGray
+        Button14.FlatStyle = FlatStyle.Flat
+        Button14.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button14.ForeColor = SystemColors.ActiveCaptionText
+        Button14.ImageAlign = ContentAlignment.MiddleLeft
+        Button14.Location = New Point(0, 336)
+        Button14.Margin = New Padding(4)
+        Button14.Name = "Button14"
+        Button14.Padding = New Padding(12, 0, 0, 0)
+        Button14.Size = New Size(432, 48)
+        Button14.TabIndex = 20
+        Button14.Text = "Data Recovery"
+        Button14.TextAlign = ContentAlignment.MiddleLeft
+        Button14.UseVisualStyleBackColor = False
+        ' 
+        ' Button7
+        ' 
+        Button7.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        Button7.BackColor = Color.White
+        Button7.Dock = DockStyle.Top
+        Button7.FlatAppearance.BorderSize = 0
+        Button7.FlatAppearance.MouseDownBackColor = Color.DimGray
+        Button7.FlatAppearance.MouseOverBackColor = Color.DimGray
+        Button7.FlatStyle = FlatStyle.Flat
+        Button7.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button7.ForeColor = SystemColors.ActiveCaptionText
+        Button7.ImageAlign = ContentAlignment.MiddleLeft
+        Button7.Location = New Point(0, 288)
+        Button7.Margin = New Padding(4)
+        Button7.Name = "Button7"
+        Button7.Padding = New Padding(12, 0, 0, 0)
+        Button7.Size = New Size(432, 48)
+        Button7.TabIndex = 19
+        Button7.Text = "User Management"
+        Button7.TextAlign = ContentAlignment.MiddleLeft
+        Button7.UseVisualStyleBackColor = False
+        ' 
+        ' Button13
+        ' 
+        Button13.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        Button13.BackColor = Color.White
+        Button13.Dock = DockStyle.Top
+        Button13.FlatAppearance.BorderSize = 0
+        Button13.FlatAppearance.MouseDownBackColor = Color.DimGray
+        Button13.FlatAppearance.MouseOverBackColor = Color.DimGray
+        Button13.FlatStyle = FlatStyle.Flat
+        Button13.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button13.ForeColor = SystemColors.ActiveCaptionText
+        Button13.ImageAlign = ContentAlignment.MiddleLeft
+        Button13.Location = New Point(0, 240)
+        Button13.Margin = New Padding(4)
+        Button13.Name = "Button13"
+        Button13.Padding = New Padding(12, 0, 0, 0)
+        Button13.Size = New Size(432, 48)
+        Button13.TabIndex = 18
+        Button13.Text = "Route Assignment"
+        Button13.TextAlign = ContentAlignment.MiddleLeft
+        Button13.UseVisualStyleBackColor = False
         ' 
         ' Button6
         ' 
@@ -507,94 +595,6 @@ Partial Class Form1
         Panel3.Size = New Size(904, 66)
         Panel3.TabIndex = 2
         ' 
-        ' BtnReports
-        ' 
-        BtnReports.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        BtnReports.BackColor = Color.LightCoral
-        BtnReports.Dock = DockStyle.Top
-        BtnReports.FlatAppearance.BorderSize = 0
-        BtnReports.FlatAppearance.MouseDownBackColor = Color.DimGray
-        BtnReports.FlatAppearance.MouseOverBackColor = Color.DimGray
-        BtnReports.FlatStyle = FlatStyle.Flat
-        BtnReports.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        BtnReports.ForeColor = SystemColors.ButtonHighlight
-        BtnReports.Image = My.Resources.Resources.Reports
-        BtnReports.ImageAlign = ContentAlignment.MiddleLeft
-        BtnReports.Location = New Point(0, 866)
-        BtnReports.Margin = New Padding(4)
-        BtnReports.Name = "BtnReports"
-        BtnReports.Padding = New Padding(12, 0, 0, 0)
-        BtnReports.Size = New Size(432, 76)
-        BtnReports.TabIndex = 12
-        BtnReports.Text = "Reports"
-        BtnReports.UseVisualStyleBackColor = False
-        ' 
-        ' Button13
-        ' 
-        Button13.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        Button13.BackColor = Color.White
-        Button13.Dock = DockStyle.Top
-        Button13.FlatAppearance.BorderSize = 0
-        Button13.FlatAppearance.MouseDownBackColor = Color.DimGray
-        Button13.FlatAppearance.MouseOverBackColor = Color.DimGray
-        Button13.FlatStyle = FlatStyle.Flat
-        Button13.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button13.ForeColor = SystemColors.ActiveCaptionText
-        Button13.ImageAlign = ContentAlignment.MiddleLeft
-        Button13.Location = New Point(0, 240)
-        Button13.Margin = New Padding(4)
-        Button13.Name = "Button13"
-        Button13.Padding = New Padding(12, 0, 0, 0)
-        Button13.Size = New Size(432, 48)
-        Button13.TabIndex = 18
-        Button13.Text = "Route Assignment"
-        Button13.TextAlign = ContentAlignment.MiddleLeft
-        Button13.UseVisualStyleBackColor = False
-        ' 
-        ' Button7
-        ' 
-        Button7.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        Button7.BackColor = Color.White
-        Button7.Dock = DockStyle.Top
-        Button7.FlatAppearance.BorderSize = 0
-        Button7.FlatAppearance.MouseDownBackColor = Color.DimGray
-        Button7.FlatAppearance.MouseOverBackColor = Color.DimGray
-        Button7.FlatStyle = FlatStyle.Flat
-        Button7.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button7.ForeColor = SystemColors.ActiveCaptionText
-        Button7.ImageAlign = ContentAlignment.MiddleLeft
-        Button7.Location = New Point(0, 288)
-        Button7.Margin = New Padding(4)
-        Button7.Name = "Button7"
-        Button7.Padding = New Padding(12, 0, 0, 0)
-        Button7.Size = New Size(432, 48)
-        Button7.TabIndex = 19
-        Button7.Text = "User Management"
-        Button7.TextAlign = ContentAlignment.MiddleLeft
-        Button7.UseVisualStyleBackColor = False
-        ' 
-        ' Button14
-        ' 
-        Button14.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        Button14.BackColor = Color.White
-        Button14.Dock = DockStyle.Top
-        Button14.FlatAppearance.BorderSize = 0
-        Button14.FlatAppearance.MouseDownBackColor = Color.DimGray
-        Button14.FlatAppearance.MouseOverBackColor = Color.DimGray
-        Button14.FlatStyle = FlatStyle.Flat
-        Button14.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button14.ForeColor = SystemColors.ActiveCaptionText
-        Button14.ImageAlign = ContentAlignment.MiddleLeft
-        Button14.Location = New Point(0, 336)
-        Button14.Margin = New Padding(4)
-        Button14.Name = "Button14"
-        Button14.Padding = New Padding(12, 0, 0, 0)
-        Button14.Size = New Size(432, 48)
-        Button14.TabIndex = 20
-        Button14.Text = "Data Recovery"
-        Button14.TextAlign = ContentAlignment.MiddleLeft
-        Button14.UseVisualStyleBackColor = False
-        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(10.0F, 25.0F)
@@ -637,12 +637,6 @@ Partial Class Form1
     Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents ReportsSubpanel As Panel
-    Friend WithEvents Button12 As Button
-    Friend WithEvents Button11 As Button
-    Friend WithEvents Button10 As Button
-    Friend WithEvents Button9 As Button
-    Friend WithEvents Button8 As Button
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents mainPnl As Panel
     Friend WithEvents Button1 As Button
@@ -652,5 +646,11 @@ Partial Class Form1
     Friend WithEvents Button14 As Button
     Friend WithEvents Button7 As Button
     Friend WithEvents Button13 As Button
+    Friend WithEvents ReportsSubpanel As Panel
+    Friend WithEvents Button12 As Button
+    Friend WithEvents Button11 As Button
+    Friend WithEvents Button10 As Button
+    Friend WithEvents Button9 As Button
+    Friend WithEvents Button8 As Button
 
 End Class

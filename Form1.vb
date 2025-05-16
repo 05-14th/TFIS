@@ -56,8 +56,36 @@
     End Sub
 
     Private Sub BtnLogout_Click(sender As Object, e As EventArgs) Handles BtnLogout.Click
-
+        Me.Close()
     End Sub
 
+    Public Sub CenterControlInParent(ByVal controlToCenter As Control)
+        If controlToCenter.Parent Is Nothing Then
+            Throw New ArgumentException("The control must have a parent container")
+        End If
 
+        Dim parent = controlToCenter.Parent
+
+        ' Calculate the centered position
+        Dim newX As Integer = (parent.ClientSize.Width - controlToCenter.Width) \ 2
+        Dim newY As Integer = (parent.ClientSize.Height - controlToCenter.Height) \ 2
+
+        ' Ensure position is not negative (minimum 0)
+        newX = Math.Max(0, newX)
+        newY = Math.Max(0, newY)
+
+        ' Set the location
+        controlToCenter.Location = New Point(newX, newY)
+
+        ' Optional: Set anchor to None to maintain centered position
+        ' when parent is resized (you'll need to call this function again)
+        controlToCenter.Anchor = AnchorStyles.None
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        mainPnl.Controls.Clear()
+        Dim selection As New formSelection(Me)
+        mainPnl.Controls.Add(selection)
+        CenterControlInParent(selection)
+    End Sub
 End Class

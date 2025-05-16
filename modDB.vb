@@ -11,7 +11,7 @@ Module modDB
     Public db_server As String = "'localhost'"
     Public db_uid As String = "'root'"
     Public db_pwd As String = "''"
-    Public db_name As String = "'student_profile'" 'database name
+    Public db_name As String = "'tfis_db'" 'database name
     Public strConnection As String = "server=" & db_server & ";uid=" & db_uid & ";password=" & db_pwd & ";database=" & db_name & ";" & "allowuservariables='True';"
 
     Public Structure LoggedUser
@@ -25,23 +25,31 @@ Module modDB
 
     Public Sub UpdateConnectionString()
         Try
-            Dim config As String = System.IO.Directory.GetCurrentDirectory & "\config.txt"
-            Dim text As String = Nothing
-            If System.IO.File.Exists(config) Then
-                Using reader As System.IO.StreamReader = New System.IO.StreamReader(config)
+            Dim configPath As String = IO.Path.Combine(IO.Directory.GetCurrentDirectory(), "config.txt")
 
-                    text = reader.ReadToEnd
-                End Using
-                Dim arr_text() As String = Split(text, vbCrLf)
-
-                strConnection = "server=" & Split(arr_text(0), "=")(1) & ";uid=" & Split(arr_text(1), "=")(1) & ";password=" & Split(arr_text(2), "=")(1) & ";database=" & Split(arr_text(3), "=")(1) & ";" & "allowuservariables='True';"
-            Else
-                MsgBox("Do not exist")
+            If Not IO.File.Exists(configPath) Then
+                MsgBox("Configuration file does not exist.", MsgBoxStyle.Critical)
+                Exit Sub
             End If
+
+            Dim lines() As String = IO.File.ReadAllLines(configPath)
+
+            If lines.Length < 4 Then
+                MsgBox("Config file is incomplete.", MsgBoxStyle.Critical)
+                Exit Sub
+            End If
+
+            Dim server As String = lines(0).Split("="c)(1).Trim()
+            Dim uid As String = lines(1).Split("="c)(1).Trim()
+            Dim pwd As String = lines(2).Split("="c)(1).Trim()
+            Dim db As String = lines(3).Split("="c)(1).Trim()
+
+            strConnection = $"server={server};uid={uid};password={pwd};database={db};allowuservariables=True;"
         Catch ex As Exception
-            MsgBox(ex.Message, MsgBoxStyle.Critical)
+            MsgBox("Error reading config: " & ex.Message, MsgBoxStyle.Critical)
         End Try
     End Sub
+
 
     Public CurrentLoggedUser As LoggedUser = Nothing
     Public Sub openConn(ByVal db_name As String)
@@ -66,6 +74,20 @@ Module modDB
             End With
         Catch EX As Exception
             MsgBox(EX.Message, MsgBoxStyle.Critical)
+        End Try
+    End Sub
+
+    Public Sub executeQuery(ByVal sql As String)
+        Try
+            openConn(db_name)
+            With cmd
+                .Connection = conn
+                .CommandText = sql
+                .ExecuteNonQuery()
+            End With
+            conn.Close()
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Critical)
         End Try
     End Sub
 
