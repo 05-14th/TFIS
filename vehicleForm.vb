@@ -66,6 +66,7 @@ Public Class vehicleForm
         Catch ex As Exception
             MessageBox.Show("Error: " & ex.Message, "Insert Failed", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Finally
+            ClearFormControls(Me)
             conn.Close()
         End Try
     End Sub

@@ -1,4 +1,4 @@
-server=localjost
+server=localhost
 uid=root
 password=
 database=tfis_db

@@ -88,4 +88,52 @@
         mainPnl.Controls.Add(selection)
         CenterControlInParent(selection)
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        mainPnl.Controls.Clear()
+        Dim update_form As New updateForm()
+        update_form.query = "SELECT * FROM tfis_franchisee"
+        update_form.Dock = DockStyle.Fill
+        mainPnl.Controls.Add(update_form)
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        mainPnl.Controls.Clear()
+        Dim update_form As New updateForm()
+        update_form.query = "SELECT * FROM tfis_franchise"
+        update_form.Dock = DockStyle.Fill
+        mainPnl.Controls.Add(update_form)
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        mainPnl.Controls.Clear()
+        Dim update_form As New updateForm()
+        update_form.query = "SELECT * FROM tfis_vehicle"
+        update_form.Dock = DockStyle.Fill
+        mainPnl.Controls.Add(update_form)
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        mainPnl.Controls.Clear()
+        Dim update_form As New updateForm()
+        update_form.query = "SELECT * FROM tfis_renewal"
+        update_form.Dock = DockStyle.Fill
+        mainPnl.Controls.Add(update_form)
+    End Sub
+
+    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+        mainPnl.Controls.Clear()
+        Dim update_form As New updateForm()
+        update_form.query = "SELECT * FROM tfis_route"
+        update_form.Dock = DockStyle.Fill
+        mainPnl.Controls.Add(update_form)
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        mainPnl.Controls.Clear()
+        Dim update_form As New updateForm()
+        update_form.query = "SELECT * FROM franchisee_account"
+        update_form.Dock = DockStyle.Fill
+        mainPnl.Controls.Add(update_form)
+    End Sub
 End Class

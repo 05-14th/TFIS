@@ -27,6 +27,7 @@ Module modDB
         Try
             Dim configPath As String = IO.Path.Combine(IO.Directory.GetCurrentDirectory(), "config.txt")
 
+
             If Not IO.File.Exists(configPath) Then
                 MsgBox("Configuration file does not exist.", MsgBoxStyle.Critical)
                 Exit Sub

@@ -49,7 +49,6 @@ Public Class franchiseeForm
             ' 3. Insert franchisee with the correct address_id
             Dim franchiseeSql As String = String.Format("
                 INSERT INTO tfis_franchisee (
-                    franchisee_id,
                     first_name,
                     middle_name,
                     last_name,
@@ -65,9 +64,8 @@ Public Class franchiseeForm
                     age,
                     occupation
                 ) VALUES (
-                    '{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', {13}, '{14}'
+                    '{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', {13}
                 );",
-                fi_txtbox.Text.Replace("'", "''"),
                 fn_txtbox.Text.Replace("'", "''"),
                 mn_txtbox.Text.Replace("'", "''"),
                 ln_txtbox.Text.Replace("'", "''"),
@@ -90,6 +88,7 @@ Public Class franchiseeForm
         Catch ex As Exception
             MessageBox.Show("Error: " & ex.Message, "Insert Failed", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Finally
+            ClearFormControls(Me)
             conn.Close()
         End Try
     End Sub

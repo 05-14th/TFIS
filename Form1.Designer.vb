@@ -104,7 +104,7 @@ Partial Class Form1
         Button12.FlatAppearance.MouseDownBackColor = Color.DimGray
         Button12.FlatAppearance.MouseOverBackColor = Color.DimGray
         Button12.FlatStyle = FlatStyle.Flat
-        Button12.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button12.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button12.ForeColor = SystemColors.ActiveCaptionText
         Button12.ImageAlign = ContentAlignment.MiddleLeft
         Button12.Location = New Point(0, 192)
@@ -126,7 +126,7 @@ Partial Class Form1
         Button11.FlatAppearance.MouseDownBackColor = Color.DimGray
         Button11.FlatAppearance.MouseOverBackColor = Color.DimGray
         Button11.FlatStyle = FlatStyle.Flat
-        Button11.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button11.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button11.ForeColor = SystemColors.ActiveCaptionText
         Button11.ImageAlign = ContentAlignment.MiddleLeft
         Button11.Location = New Point(0, 144)
@@ -148,7 +148,7 @@ Partial Class Form1
         Button10.FlatAppearance.MouseDownBackColor = Color.DimGray
         Button10.FlatAppearance.MouseOverBackColor = Color.DimGray
         Button10.FlatStyle = FlatStyle.Flat
-        Button10.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button10.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button10.ForeColor = SystemColors.ActiveCaptionText
         Button10.ImageAlign = ContentAlignment.MiddleLeft
         Button10.Location = New Point(0, 96)
@@ -170,7 +170,7 @@ Partial Class Form1
         Button9.FlatAppearance.MouseDownBackColor = Color.DimGray
         Button9.FlatAppearance.MouseOverBackColor = Color.DimGray
         Button9.FlatStyle = FlatStyle.Flat
-        Button9.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button9.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button9.ForeColor = SystemColors.ActiveCaptionText
         Button9.ImageAlign = ContentAlignment.MiddleLeft
         Button9.Location = New Point(0, 48)
@@ -192,7 +192,7 @@ Partial Class Form1
         Button8.FlatAppearance.MouseDownBackColor = Color.DimGray
         Button8.FlatAppearance.MouseOverBackColor = Color.DimGray
         Button8.FlatStyle = FlatStyle.Flat
-        Button8.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button8.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button8.ForeColor = SystemColors.ActiveCaptionText
         Button8.ImageAlign = ContentAlignment.MiddleLeft
         Button8.Location = New Point(0, 0)
@@ -214,7 +214,7 @@ Partial Class Form1
         BtnReports.FlatAppearance.MouseDownBackColor = Color.DimGray
         BtnReports.FlatAppearance.MouseOverBackColor = Color.DimGray
         BtnReports.FlatStyle = FlatStyle.Flat
-        BtnReports.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BtnReports.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         BtnReports.ForeColor = SystemColors.ButtonHighlight
         BtnReports.Image = My.Resources.Resources.Reports
         BtnReports.ImageAlign = ContentAlignment.MiddleLeft
@@ -252,7 +252,7 @@ Partial Class Form1
         Button14.FlatAppearance.MouseDownBackColor = Color.DimGray
         Button14.FlatAppearance.MouseOverBackColor = Color.DimGray
         Button14.FlatStyle = FlatStyle.Flat
-        Button14.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button14.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button14.ForeColor = SystemColors.ActiveCaptionText
         Button14.ImageAlign = ContentAlignment.MiddleLeft
         Button14.Location = New Point(0, 336)
@@ -274,7 +274,7 @@ Partial Class Form1
         Button7.FlatAppearance.MouseDownBackColor = Color.DimGray
         Button7.FlatAppearance.MouseOverBackColor = Color.DimGray
         Button7.FlatStyle = FlatStyle.Flat
-        Button7.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button7.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button7.ForeColor = SystemColors.ActiveCaptionText
         Button7.ImageAlign = ContentAlignment.MiddleLeft
         Button7.Location = New Point(0, 288)
@@ -296,7 +296,7 @@ Partial Class Form1
         Button13.FlatAppearance.MouseDownBackColor = Color.DimGray
         Button13.FlatAppearance.MouseOverBackColor = Color.DimGray
         Button13.FlatStyle = FlatStyle.Flat
-        Button13.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button13.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button13.ForeColor = SystemColors.ActiveCaptionText
         Button13.ImageAlign = ContentAlignment.MiddleLeft
         Button13.Location = New Point(0, 240)
@@ -318,7 +318,7 @@ Partial Class Form1
         Button6.FlatAppearance.MouseDownBackColor = Color.DimGray
         Button6.FlatAppearance.MouseOverBackColor = Color.DimGray
         Button6.FlatStyle = FlatStyle.Flat
-        Button6.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button6.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button6.ForeColor = SystemColors.ActiveCaptionText
         Button6.ImageAlign = ContentAlignment.MiddleLeft
         Button6.Location = New Point(0, 192)
@@ -340,7 +340,7 @@ Partial Class Form1
         Button5.FlatAppearance.MouseDownBackColor = Color.DimGray
         Button5.FlatAppearance.MouseOverBackColor = Color.DimGray
         Button5.FlatStyle = FlatStyle.Flat
-        Button5.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button5.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button5.ForeColor = SystemColors.ActiveCaptionText
         Button5.ImageAlign = ContentAlignment.MiddleLeft
         Button5.Location = New Point(0, 144)
@@ -362,7 +362,7 @@ Partial Class Form1
         Button4.FlatAppearance.MouseDownBackColor = Color.DimGray
         Button4.FlatAppearance.MouseOverBackColor = Color.DimGray
         Button4.FlatStyle = FlatStyle.Flat
-        Button4.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button4.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button4.ForeColor = SystemColors.ActiveCaptionText
         Button4.ImageAlign = ContentAlignment.MiddleLeft
         Button4.Location = New Point(0, 96)
@@ -384,7 +384,7 @@ Partial Class Form1
         Button3.FlatAppearance.MouseDownBackColor = Color.DimGray
         Button3.FlatAppearance.MouseOverBackColor = Color.DimGray
         Button3.FlatStyle = FlatStyle.Flat
-        Button3.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button3.ForeColor = SystemColors.ActiveCaptionText
         Button3.ImageAlign = ContentAlignment.MiddleLeft
         Button3.Location = New Point(0, 48)
@@ -406,7 +406,7 @@ Partial Class Form1
         Button2.FlatAppearance.MouseDownBackColor = Color.DimGray
         Button2.FlatAppearance.MouseOverBackColor = Color.DimGray
         Button2.FlatStyle = FlatStyle.Flat
-        Button2.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button2.ForeColor = SystemColors.ActiveCaptionText
         Button2.ImageAlign = ContentAlignment.MiddleLeft
         Button2.Location = New Point(0, 0)
@@ -428,7 +428,7 @@ Partial Class Form1
         BtnLogout.FlatAppearance.MouseDownBackColor = Color.DimGray
         BtnLogout.FlatAppearance.MouseOverBackColor = Color.DimGray
         BtnLogout.FlatStyle = FlatStyle.Flat
-        BtnLogout.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BtnLogout.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         BtnLogout.ForeColor = SystemColors.ButtonHighlight
         BtnLogout.Image = My.Resources.Resources.Log_Out__1_
         BtnLogout.ImageAlign = ContentAlignment.MiddleLeft
@@ -450,7 +450,7 @@ Partial Class Form1
         ButtonMenu.FlatAppearance.MouseDownBackColor = Color.Gray
         ButtonMenu.FlatAppearance.MouseOverBackColor = Color.Gray
         ButtonMenu.FlatStyle = FlatStyle.Flat
-        ButtonMenu.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        ButtonMenu.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         ButtonMenu.ForeColor = SystemColors.ButtonHighlight
         ButtonMenu.Image = CType(resources.GetObject("ButtonMenu.Image"), Image)
         ButtonMenu.ImageAlign = ContentAlignment.MiddleLeft
@@ -472,7 +472,7 @@ Partial Class Form1
         BtnDashboard.FlatAppearance.MouseDownBackColor = Color.Gray
         BtnDashboard.FlatAppearance.MouseOverBackColor = Color.Gray
         BtnDashboard.FlatStyle = FlatStyle.Flat
-        BtnDashboard.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BtnDashboard.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         BtnDashboard.ForeColor = SystemColors.ButtonHighlight
         BtnDashboard.ImageAlign = ContentAlignment.MiddleLeft
         BtnDashboard.Location = New Point(0, 321)
@@ -557,7 +557,7 @@ Partial Class Form1
         Button1.FlatAppearance.BorderColor = Color.Black
         Button1.FlatAppearance.BorderSize = 0
         Button1.FlatStyle = FlatStyle.Flat
-        Button1.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button1.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button1.ForeColor = SystemColors.ButtonHighlight
         Button1.Image = CType(resources.GetObject("Button1.Image"), Image)
         Button1.ImageAlign = ContentAlignment.MiddleLeft
@@ -597,7 +597,7 @@ Partial Class Form1
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(10.0F, 25.0F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.LavenderBlush
         ClientSize = New Size(1362, 1050)

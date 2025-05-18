@@ -33,27 +33,27 @@ Partial Class franchiseForm
         BigLabel13 = New ReaLTaiizor.Controls.BigLabel()
         BigLabel14 = New ReaLTaiizor.Controls.BigLabel()
         BigLabel15 = New ReaLTaiizor.Controls.BigLabel()
-        BigLabel19 = New ReaLTaiizor.Controls.BigLabel()
         BigLabel20 = New ReaLTaiizor.Controls.BigLabel()
         BigLabel21 = New ReaLTaiizor.Controls.BigLabel()
-        BigLabel25 = New ReaLTaiizor.Controls.BigLabel()
         BigLabel26 = New ReaLTaiizor.Controls.BigLabel()
         BigLabel27 = New ReaLTaiizor.Controls.BigLabel()
         franchise_txtbox = New ReaLTaiizor.Controls.BigTextBox()
-        route_txtbox = New ReaLTaiizor.Controls.BigTextBox()
-        ln_txtbox = New ReaLTaiizor.Controls.BigTextBox()
         assoc_txtbox = New ReaLTaiizor.Controls.BigTextBox()
         fd_txtbox = New ReaLTaiizor.Controls.BigTextBox()
-        pn_txtbox = New ReaLTaiizor.Controls.BigTextBox()
-        tn_txtbox = New ReaLTaiizor.Controls.BigTextBox()
+        ln_txtbox = New ReaLTaiizor.Controls.BigTextBox()
         ap_txtbox = New ReaLTaiizor.Controls.BigTextBox()
         ed_dt = New DateTimePicker()
         TableLayoutPanel1 = New TableLayoutPanel()
+        tv_txtbox = New ReaLTaiizor.Controls.BigTextBox()
+        route_cb = New ReaLTaiizor.Controls.MaterialComboBox()
+        BigLabel4 = New ReaLTaiizor.Controls.BigLabel()
+        vehicle_cb = New ReaLTaiizor.Controls.MaterialComboBox()
         area_cb = New ReaLTaiizor.Controls.MaterialComboBox()
         status_cb = New ReaLTaiizor.Controls.MaterialComboBox()
         franchisee_cb = New ReaLTaiizor.Controls.MaterialComboBox()
         ft_cb = New ReaLTaiizor.Controls.MaterialComboBox()
         di_dt = New DateTimePicker()
+        BigLabel25 = New ReaLTaiizor.Controls.BigLabel()
         TableLayoutPanel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -142,7 +142,7 @@ Partial Class franchiseForm
         BigLabel8.Name = "BigLabel8"
         BigLabel8.Size = New Size(322, 32)
         BigLabel8.TabIndex = 8
-        BigLabel8.Text = "Route"
+        BigLabel8.Text = "Total Violations"
         ' 
         ' BigLabel9
         ' 
@@ -196,19 +196,6 @@ Partial Class franchiseForm
         BigLabel15.TabIndex = 15
         BigLabel15.Text = "Last Renewal Date"
         ' 
-        ' BigLabel19
-        ' 
-        BigLabel19.AutoSize = True
-        BigLabel19.BackColor = Color.Transparent
-        BigLabel19.Dock = DockStyle.Fill
-        BigLabel19.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        BigLabel19.ForeColor = Color.FromArgb(CByte(80), CByte(80), CByte(80))
-        BigLabel19.Location = New Point(3, 263)
-        BigLabel19.Name = "BigLabel19"
-        BigLabel19.Size = New Size(322, 32)
-        BigLabel19.TabIndex = 19
-        BigLabel19.Text = "License No."
-        ' 
         ' BigLabel20
         ' 
         BigLabel20.AutoSize = True
@@ -235,19 +222,6 @@ Partial Class franchiseForm
         BigLabel21.TabIndex = 21
         BigLabel21.Text = "Franchise Duration"
         ' 
-        ' BigLabel25
-        ' 
-        BigLabel25.AutoSize = True
-        BigLabel25.BackColor = Color.Transparent
-        BigLabel25.Dock = DockStyle.Fill
-        BigLabel25.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        BigLabel25.ForeColor = Color.FromArgb(CByte(80), CByte(80), CByte(80))
-        BigLabel25.Location = New Point(3, 351)
-        BigLabel25.Name = "BigLabel25"
-        BigLabel25.Size = New Size(322, 32)
-        BigLabel25.TabIndex = 25
-        BigLabel25.Text = "Plate Number"
-        ' 
         ' BigLabel26
         ' 
         BigLabel26.AutoSize = True
@@ -259,7 +233,7 @@ Partial Class franchiseForm
         BigLabel26.Name = "BigLabel26"
         BigLabel26.Size = New Size(322, 32)
         BigLabel26.TabIndex = 26
-        BigLabel26.Text = "Tricycle No."
+        BigLabel26.Text = "License No."
         ' 
         ' BigLabel27
         ' 
@@ -290,40 +264,6 @@ Partial Class franchiseForm
         franchise_txtbox.TabIndex = 37
         franchise_txtbox.TextAlignment = HorizontalAlignment.Left
         franchise_txtbox.UseSystemPasswordChar = False
-        ' 
-        ' route_txtbox
-        ' 
-        route_txtbox.BackColor = Color.Transparent
-        route_txtbox.Dock = DockStyle.Fill
-        route_txtbox.Font = New Font("Tahoma", 11F)
-        route_txtbox.ForeColor = Color.DimGray
-        route_txtbox.Image = Nothing
-        route_txtbox.Location = New Point(331, 123)
-        route_txtbox.MaxLength = 32767
-        route_txtbox.Multiline = False
-        route_txtbox.Name = "route_txtbox"
-        route_txtbox.ReadOnly = False
-        route_txtbox.Size = New Size(322, 50)
-        route_txtbox.TabIndex = 41
-        route_txtbox.TextAlignment = HorizontalAlignment.Left
-        route_txtbox.UseSystemPasswordChar = False
-        ' 
-        ' ln_txtbox
-        ' 
-        ln_txtbox.BackColor = Color.Transparent
-        ln_txtbox.Dock = DockStyle.Fill
-        ln_txtbox.Font = New Font("Tahoma", 11F)
-        ln_txtbox.ForeColor = Color.DimGray
-        ln_txtbox.Image = Nothing
-        ln_txtbox.Location = New Point(3, 298)
-        ln_txtbox.MaxLength = 32767
-        ln_txtbox.Multiline = False
-        ln_txtbox.Name = "ln_txtbox"
-        ln_txtbox.ReadOnly = False
-        ln_txtbox.Size = New Size(322, 50)
-        ln_txtbox.TabIndex = 46
-        ln_txtbox.TextAlignment = HorizontalAlignment.Left
-        ln_txtbox.UseSystemPasswordChar = False
         ' 
         ' assoc_txtbox
         ' 
@@ -359,39 +299,22 @@ Partial Class franchiseForm
         fd_txtbox.TextAlignment = HorizontalAlignment.Left
         fd_txtbox.UseSystemPasswordChar = False
         ' 
-        ' pn_txtbox
+        ' ln_txtbox
         ' 
-        pn_txtbox.BackColor = Color.Transparent
-        pn_txtbox.Dock = DockStyle.Fill
-        pn_txtbox.Font = New Font("Tahoma", 11F)
-        pn_txtbox.ForeColor = Color.DimGray
-        pn_txtbox.Image = Nothing
-        pn_txtbox.Location = New Point(3, 386)
-        pn_txtbox.MaxLength = 32767
-        pn_txtbox.Multiline = False
-        pn_txtbox.Name = "pn_txtbox"
-        pn_txtbox.ReadOnly = False
-        pn_txtbox.Size = New Size(322, 50)
-        pn_txtbox.TabIndex = 49
-        pn_txtbox.TextAlignment = HorizontalAlignment.Left
-        pn_txtbox.UseSystemPasswordChar = False
-        ' 
-        ' tn_txtbox
-        ' 
-        tn_txtbox.BackColor = Color.Transparent
-        tn_txtbox.Dock = DockStyle.Fill
-        tn_txtbox.Font = New Font("Tahoma", 11F)
-        tn_txtbox.ForeColor = Color.DimGray
-        tn_txtbox.Image = Nothing
-        tn_txtbox.Location = New Point(331, 386)
-        tn_txtbox.MaxLength = 32767
-        tn_txtbox.Multiline = False
-        tn_txtbox.Name = "tn_txtbox"
-        tn_txtbox.ReadOnly = False
-        tn_txtbox.Size = New Size(322, 50)
-        tn_txtbox.TabIndex = 50
-        tn_txtbox.TextAlignment = HorizontalAlignment.Left
-        tn_txtbox.UseSystemPasswordChar = False
+        ln_txtbox.BackColor = Color.Transparent
+        ln_txtbox.Dock = DockStyle.Fill
+        ln_txtbox.Font = New Font("Tahoma", 11F)
+        ln_txtbox.ForeColor = Color.DimGray
+        ln_txtbox.Image = Nothing
+        ln_txtbox.Location = New Point(331, 386)
+        ln_txtbox.MaxLength = 32767
+        ln_txtbox.Multiline = False
+        ln_txtbox.Name = "ln_txtbox"
+        ln_txtbox.ReadOnly = False
+        ln_txtbox.Size = New Size(322, 50)
+        ln_txtbox.TabIndex = 50
+        ln_txtbox.TextAlignment = HorizontalAlignment.Left
+        ln_txtbox.UseSystemPasswordChar = False
         ' 
         ' ap_txtbox
         ' 
@@ -424,6 +347,10 @@ Partial Class franchiseForm
         TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
         TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
         TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 323F))
+        TableLayoutPanel1.Controls.Add(tv_txtbox, 1, 3)
+        TableLayoutPanel1.Controls.Add(route_cb, 0, 7)
+        TableLayoutPanel1.Controls.Add(BigLabel4, 0, 6)
+        TableLayoutPanel1.Controls.Add(vehicle_cb, 0, 9)
         TableLayoutPanel1.Controls.Add(area_cb, 1, 5)
         TableLayoutPanel1.Controls.Add(status_cb, 1, 1)
         TableLayoutPanel1.Controls.Add(franchisee_cb, 0, 5)
@@ -431,19 +358,15 @@ Partial Class franchiseForm
         TableLayoutPanel1.Controls.Add(di_dt, 2, 1)
         TableLayoutPanel1.Controls.Add(ed_dt, 2, 3)
         TableLayoutPanel1.Controls.Add(ap_txtbox, 2, 9)
-        TableLayoutPanel1.Controls.Add(tn_txtbox, 1, 9)
-        TableLayoutPanel1.Controls.Add(pn_txtbox, 0, 9)
+        TableLayoutPanel1.Controls.Add(ln_txtbox, 1, 9)
         TableLayoutPanel1.Controls.Add(fd_txtbox, 2, 7)
         TableLayoutPanel1.Controls.Add(assoc_txtbox, 1, 7)
-        TableLayoutPanel1.Controls.Add(ln_txtbox, 0, 7)
-        TableLayoutPanel1.Controls.Add(route_txtbox, 1, 3)
         TableLayoutPanel1.Controls.Add(franchise_txtbox, 0, 1)
         TableLayoutPanel1.Controls.Add(BigLabel27, 2, 8)
         TableLayoutPanel1.Controls.Add(BigLabel26, 1, 8)
         TableLayoutPanel1.Controls.Add(BigLabel25, 0, 8)
         TableLayoutPanel1.Controls.Add(BigLabel21, 2, 6)
         TableLayoutPanel1.Controls.Add(BigLabel20, 1, 6)
-        TableLayoutPanel1.Controls.Add(BigLabel19, 0, 6)
         TableLayoutPanel1.Controls.Add(BigLabel15, 2, 4)
         TableLayoutPanel1.Controls.Add(BigLabel14, 1, 4)
         TableLayoutPanel1.Controls.Add(BigLabel13, 0, 4)
@@ -473,6 +396,82 @@ Partial Class franchiseForm
         TableLayoutPanel1.RowStyles.Add(New RowStyle())
         TableLayoutPanel1.Size = New Size(979, 985)
         TableLayoutPanel1.TabIndex = 0
+        ' 
+        ' tv_txtbox
+        ' 
+        tv_txtbox.BackColor = Color.Transparent
+        tv_txtbox.Dock = DockStyle.Fill
+        tv_txtbox.Font = New Font("Tahoma", 11F)
+        tv_txtbox.ForeColor = Color.DimGray
+        tv_txtbox.Image = Nothing
+        tv_txtbox.Location = New Point(331, 123)
+        tv_txtbox.MaxLength = 32767
+        tv_txtbox.Multiline = False
+        tv_txtbox.Name = "tv_txtbox"
+        tv_txtbox.ReadOnly = False
+        tv_txtbox.Size = New Size(322, 50)
+        tv_txtbox.TabIndex = 72
+        tv_txtbox.TextAlignment = HorizontalAlignment.Left
+        tv_txtbox.UseSystemPasswordChar = False
+        ' 
+        ' route_cb
+        ' 
+        route_cb.AutoResize = False
+        route_cb.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(255))
+        route_cb.Depth = 0
+        route_cb.Dock = DockStyle.Fill
+        route_cb.DrawMode = DrawMode.OwnerDrawVariable
+        route_cb.DropDownHeight = 174
+        route_cb.DropDownStyle = ComboBoxStyle.DropDownList
+        route_cb.DropDownWidth = 121
+        route_cb.Font = New Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Pixel)
+        route_cb.ForeColor = Color.FromArgb(CByte(222), CByte(0), CByte(0), CByte(0))
+        route_cb.FormattingEnabled = True
+        route_cb.IntegralHeight = False
+        route_cb.ItemHeight = 43
+        route_cb.Location = New Point(3, 298)
+        route_cb.MaxDropDownItems = 4
+        route_cb.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT
+        route_cb.Name = "route_cb"
+        route_cb.Size = New Size(322, 49)
+        route_cb.StartIndex = 0
+        route_cb.TabIndex = 71
+        ' 
+        ' BigLabel4
+        ' 
+        BigLabel4.AutoSize = True
+        BigLabel4.BackColor = Color.Transparent
+        BigLabel4.Dock = DockStyle.Fill
+        BigLabel4.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        BigLabel4.ForeColor = Color.FromArgb(CByte(80), CByte(80), CByte(80))
+        BigLabel4.Location = New Point(3, 263)
+        BigLabel4.Name = "BigLabel4"
+        BigLabel4.Size = New Size(322, 32)
+        BigLabel4.TabIndex = 70
+        BigLabel4.Text = "Route"
+        ' 
+        ' vehicle_cb
+        ' 
+        vehicle_cb.AutoResize = False
+        vehicle_cb.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(255))
+        vehicle_cb.Depth = 0
+        vehicle_cb.Dock = DockStyle.Fill
+        vehicle_cb.DrawMode = DrawMode.OwnerDrawVariable
+        vehicle_cb.DropDownHeight = 174
+        vehicle_cb.DropDownStyle = ComboBoxStyle.DropDownList
+        vehicle_cb.DropDownWidth = 121
+        vehicle_cb.Font = New Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Pixel)
+        vehicle_cb.ForeColor = Color.FromArgb(CByte(222), CByte(0), CByte(0), CByte(0))
+        vehicle_cb.FormattingEnabled = True
+        vehicle_cb.IntegralHeight = False
+        vehicle_cb.ItemHeight = 43
+        vehicle_cb.Location = New Point(3, 386)
+        vehicle_cb.MaxDropDownItems = 4
+        vehicle_cb.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT
+        vehicle_cb.Name = "vehicle_cb"
+        vehicle_cb.Size = New Size(322, 49)
+        vehicle_cb.StartIndex = 0
+        vehicle_cb.TabIndex = 68
         ' 
         ' area_cb
         ' 
@@ -577,6 +576,19 @@ Partial Class franchiseForm
         di_dt.Size = New Size(317, 31)
         di_dt.TabIndex = 55
         ' 
+        ' BigLabel25
+        ' 
+        BigLabel25.AutoSize = True
+        BigLabel25.BackColor = Color.Transparent
+        BigLabel25.Dock = DockStyle.Fill
+        BigLabel25.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        BigLabel25.ForeColor = Color.FromArgb(CByte(80), CByte(80), CByte(80))
+        BigLabel25.Location = New Point(3, 351)
+        BigLabel25.Name = "BigLabel25"
+        BigLabel25.Size = New Size(322, 32)
+        BigLabel25.TabIndex = 25
+        BigLabel25.Text = "Vehicle"
+        ' 
         ' franchiseForm
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
@@ -600,19 +612,14 @@ Partial Class franchiseForm
     Friend WithEvents BigLabel13 As ReaLTaiizor.Controls.BigLabel
     Friend WithEvents BigLabel14 As ReaLTaiizor.Controls.BigLabel
     Friend WithEvents BigLabel15 As ReaLTaiizor.Controls.BigLabel
-    Friend WithEvents BigLabel19 As ReaLTaiizor.Controls.BigLabel
     Friend WithEvents BigLabel20 As ReaLTaiizor.Controls.BigLabel
     Friend WithEvents BigLabel21 As ReaLTaiizor.Controls.BigLabel
-    Friend WithEvents BigLabel25 As ReaLTaiizor.Controls.BigLabel
     Friend WithEvents BigLabel26 As ReaLTaiizor.Controls.BigLabel
     Friend WithEvents BigLabel27 As ReaLTaiizor.Controls.BigLabel
     Friend WithEvents franchise_txtbox As ReaLTaiizor.Controls.BigTextBox
-    Friend WithEvents route_txtbox As ReaLTaiizor.Controls.BigTextBox
-    Friend WithEvents ln_txtbox As ReaLTaiizor.Controls.BigTextBox
     Friend WithEvents assoc_txtbox As ReaLTaiizor.Controls.BigTextBox
     Friend WithEvents fd_txtbox As ReaLTaiizor.Controls.BigTextBox
-    Friend WithEvents pn_txtbox As ReaLTaiizor.Controls.BigTextBox
-    Friend WithEvents tn_txtbox As ReaLTaiizor.Controls.BigTextBox
+    Friend WithEvents ln_txtbox As ReaLTaiizor.Controls.BigTextBox
     Friend WithEvents ap_txtbox As ReaLTaiizor.Controls.BigTextBox
     Friend WithEvents ed_dt As DateTimePicker
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
@@ -621,5 +628,10 @@ Partial Class franchiseForm
     Friend WithEvents status_cb As ReaLTaiizor.Controls.MaterialComboBox
     Friend WithEvents franchisee_cb As ReaLTaiizor.Controls.MaterialComboBox
     Friend WithEvents ft_cb As ReaLTaiizor.Controls.MaterialComboBox
+    Friend WithEvents vehicle_cb As ReaLTaiizor.Controls.MaterialComboBox
+    Friend WithEvents BigLabel25 As ReaLTaiizor.Controls.BigLabel
+    Friend WithEvents route_cb As ReaLTaiizor.Controls.MaterialComboBox
+    Friend WithEvents BigLabel4 As ReaLTaiizor.Controls.BigLabel
+    Friend WithEvents tv_txtbox As ReaLTaiizor.Controls.BigTextBox
 
 End Class

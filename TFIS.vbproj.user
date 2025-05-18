@@ -22,6 +22,9 @@
     <Compile Update="routeAssignForm.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="updateForm.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="vehicleForm.vb">
       <SubType>UserControl</SubType>
     </Compile>

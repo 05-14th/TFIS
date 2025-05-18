@@ -58,6 +58,7 @@ Public Class Landing
     Private Sub Landing_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Resize_(signInPnl, 551, 332)
         Resize_(signUpPnl, 1043, 535)
+        UpdateConnectionString()
         If (isConnectedToLocalServer() = False) Then
             MsgBox("Unable to connect to database.", vbOK + vbCritical, "Warning")
         End If

@@ -21,4 +21,26 @@
         ' when parent is resized (you'll need to call this function again)
         controlToCenter.Anchor = AnchorStyles.None
     End Sub
+
+    Public Sub ClearFormControls(ctrl As Control)
+        For Each c As Control In ctrl.Controls
+            ' Recursively clear nested containers
+            If c.HasChildren Then
+                ClearFormControls(c)
+            End If
+
+            ' Clear TextBoxes (ReaLTaiizor or standard)
+            If TypeOf c Is TextBoxBase Then
+                DirectCast(c, TextBoxBase).Clear()
+
+                ' Clear ComboBoxes
+            ElseIf TypeOf c Is ComboBox Then
+                DirectCast(c, ComboBox).SelectedIndex = -1
+
+                ' Clear DateTimePickers
+            ElseIf TypeOf c Is DateTimePicker Then
+                DirectCast(c, DateTimePicker).Value = DateTime.Now
+            End If
+        Next
+    End Sub
 End Module
